@@ -1,0 +1,70 @@
+MCODE RESULTS
+
+   Module  Score Nodes Edges    Seed
+1 Module1 27.786    29   389   HELLS
+2 Module2 13.000    13    78     LOR
+3 Module3  4.222    10   MCODE files exported successfully.
+   10   ANXA1
+5 Module5  4.000     7    12 S100A12
+6 Module6  3.600     6     9   KRT17
+
+
+Module 1 Genes:
+HELLS
+MCM6
+GINS1
+NEK2
+CCNB1
+TOP2A
+DTL
+CDC20
+GINS2
+CENPF
+DLGAP5
+KIF4A
+RRM2
+MCM5
+ASPM
+CEP55
+UBE2C
+CDK1
+FOXM1
+NUSAP1
+SMC4
+PRC1
+CDKN3
+ZWINT
+CKS2
+MELK
+RFC4
+MCM2
+KIF20A
+
+
+Module 2 Genes:
+LOR
+PPL
+SPRR1B
+DSG2
+CSTA
+IVL
+SPRR3
+SPRR1A
+DSC2
+DSG3
+SPRR2D
+PI3
+TGM1
+
+
+Module 3 Genes:
+IDO1
+IFI6
+MUC1
+NOD2
+IFI44L
+PLSCR1
+MMP7
+CXCL9
+BST2
+ISG15

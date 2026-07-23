@@ -1,0 +1,112 @@
+﻿destination,source,reason
+scripts/01_bulk_tissue_malignant_switch.R,R_proj/Proj_Panc/Results/phase1.R,"GSE143754 DEG, CP-aware malignant-switch, enrichment, and QC working script"
+scripts/02_spatial_stage_ppi_hub_analysis.R,R_proj/Proj_Panc/.Rproj.user/A1A16783/sources/session-f90c0a1b/398C0BD5-contents,"Recovered GSE208536 spatial, PPI hub, shared-hub, and figure-generation script"
+scripts/03_ev_mirna_model_transferability.R,R_proj/Proj_Panc/.Rproj.user/A1A16783/sources/session-f90c0a1b/BE8B1EC3-contents,"Recovered GSE304572, GSE259327, and GSE268771 EV/plasma miRNA analysis script"
+scripts/04_curated_multimir_hub_evidence.R,R_proj/Proj_Panc/.Rproj.user/A1A16783/sources/session-f90c0a1b/9C7297A0-contents,Recovered multiMiR curated miRNA-hub-gene evidence script
+data/source/GSE143754_series_matrix.txt.gz,R_proj/Proj_Panc/GSE143754_series_matrix.txt.gz,processed/public source input
+data/source/GSE208536_Processed_data.xlsx,R_proj/Proj_Panc/GSE208536_Processed_data.xlsx,processed/public source input
+data/source/GSE208536_series_matrix.txt.gz,R_proj/Proj_Panc/GSE208536_series_matrix.txt.gz,processed/public source input
+data/source/GSE304572_processed_data.xlsx,R_proj/Proj_Panc/GSE304572_processed_data.xlsx,processed/public source input
+data/source/GSE304572_series_matrix.txt.gz,R_proj/Proj_Panc/GSE304572_series_matrix.txt.gz,processed/public source input
+data/source/GSE259327_Raw_counts_PDAC_203samples_new.xlsx,R_proj/Proj_Panc/GSE259327_Raw_counts_PDAC_203samples_new.xlsx,processed/public source input
+data/source/GSE259327_Raw_counts_PLCO_96samples_new.xlsx,R_proj/Proj_Panc/GSE259327_Raw_counts_PLCO_96samples_new.xlsx,processed/public source input
+data/source/GSE259327_series_matrix.txt.gz,R_proj/Proj_Panc/GSE259327_series_matrix.txt.gz,processed/public source input
+data/source/GSE268771_miRNA_expression_RPM.txt.gz,R_proj/Proj_Panc/GSE268771_miRNA_expression_RPM.txt.gz,processed/public source input
+data/source/GSE268771_series_matrix.txt.gz,R_proj/Proj_Panc/GSE268771_series_matrix.txt.gz,processed/public source input
+results/tables/discovery/GSE143754_DEG_All.csv,R_proj/Proj_Panc/Results/GSE143754_DEG_All.csv,final/supporting result table
+results/tables/discovery/GSE143754_DEG_Significant.csv,R_proj/Proj_Panc/Results/GSE143754_DEG_Significant.csv,final/supporting result table
+results/tables/discovery/GSE143754_DEGs.csv,R_proj/Proj_Panc/Results/GSE143754_DEGs.csv,final/supporting result table
+results/tables/discovery/CP_vs_Normal_DEGs.csv,R_proj/Proj_Panc/Results/CP_vs_Normal_DEGs.csv,final/supporting result table
+results/tables/discovery/Tumor_vs_CP_DEGs.csv,R_proj/Proj_Panc/Results/Tumor_vs_CP_DEGs.csv,final/supporting result table
+results/tables/discovery/Malignant_Switch_628_Genes.csv,R_proj/Proj_Panc/Results/Malignant_Switch_628_Genes.csv,final/supporting result table
+results/tables/discovery/Malignant_Switch_628_Genes.txt,R_proj/Proj_Panc/Results/Malignant_Switch_628_Genes.txt,final/supporting result table
+results/tables/discovery/Common_3way_Genes.csv,R_proj/Proj_Panc/Results/Common_3way_Genes.csv,final/supporting result table
+results/tables/discovery/Common_Tumor_CP_Genes.csv,R_proj/Proj_Panc/Results/Common_Tumor_CP_Genes.csv,final/supporting result table
+results/tables/discovery/Tumor_Specific_Genes.csv,R_proj/Proj_Panc/Results/Tumor_Specific_Genes.csv,final/supporting result table
+results/tables/spatial/GSE208536_sample_metadata.csv,R_proj/Proj_Panc/Results/GSE208536_sample_metadata.csv,final/supporting result table
+results/tables/spatial/GSE208536_expression_metadata_mapping.csv,R_proj/Proj_Panc/Results/GSE208536_expression_metadata_mapping.csv,final/supporting result table
+results/tables/spatial/GSE208536_verified_expression_metadata_mapping.csv,R_proj/Proj_Panc/Results/GSE208536_verified_expression_metadata_mapping.csv,final/supporting result table
+results/tables/spatial/GSE208536_all_gene_progression_statistics.csv,R_proj/Proj_Panc/Results/GSE208536_all_gene_progression_statistics.csv,final/supporting result table
+results/tables/spatial/Corrected_80_Gene_Spatial_Progression_Statistics.csv,R_proj/Proj_Panc/Results/Corrected_80_Gene_Spatial_Progression_Statistics.csv,final/supporting result table
+results/tables/spatial/Corrected_Stage_Associated_Genes.txt,R_proj/Proj_Panc/Results/Corrected_Stage_Associated_Genes.txt,final/supporting result table
+results/tables/spatial/valid_genes.txt,R_proj/Proj_Panc/Results/valid_genes.txt,final/supporting result table
+results/tables/spatial/Corrected_Core_Hub_Gene_Summary.csv,R_proj/Proj_Panc/Results/Corrected_Core_Hub_Gene_Summary.csv,final/supporting result table
+results/tables/spatial/Corrected_Core_Progression_Hub_Genes.txt,R_proj/Proj_Panc/Results/Corrected_Core_Progression_Hub_Genes.txt,final/supporting result table
+results/tables/spatial/Corrected_Hub_Genes_Within_80_Spatial_Genes.csv,R_proj/Proj_Panc/Results/Corrected_Hub_Genes_Within_80_Spatial_Genes.csv,final/supporting result table
+results/tables/enrichment_ppi/GO_BP_628.csv,R_proj/Proj_Panc/Results/GO_BP_628.csv,final/supporting result table
+results/tables/enrichment_ppi/KEGG_628.csv,R_proj/Proj_Panc/Results/KEGG_628.csv,final/supporting result table
+results/tables/enrichment_ppi/KEGG_80_Genes.csv,R_proj/Proj_Panc/Results/KEGG_80_Genes.csv,final/supporting result table
+results/tables/enrichment_ppi/GO_BP_Tumor_vs_CP.csv,R_proj/Proj_Panc/Results/GO_BP_Tumor_vs_CP.csv,final/supporting result table
+results/tables/enrichment_ppi/HubbaTable.csv,R_proj/Proj_Panc/Results/HubbaTable.csv,final/supporting result table
+results/tables/enrichment_ppi/MCC_top20_80genes_rank.csv,R_proj/Proj_Panc/Results/MCC_top20_80genes_rank.csv,final/supporting result table
+results/tables/enrichment_ppi/Degree_top20_80genes.csv,R_proj/Proj_Panc/Results/Degree_top20_80genes.csv,final/supporting result table
+results/tables/enrichment_ppi/Table_12_Shared_Stage_Associated_PPI_Hub_Genes.csv,R_proj/Proj_Panc/Results/Table_12_Shared_Stage_Associated_PPI_Hub_Genes.csv,final/supporting result table
+results/tables/enrichment_ppi/Supplementary_Table_12_Shared_StageAssociated_PPI_Hub_Genes.csv,R_proj/Proj_Panc/Results/Supplementary_Table_12_Shared_StageAssociated_PPI_Hub_Genes.csv,final/supporting result table
+results/tables/mirna/Candidate_miRNAs.csv,R_proj/Proj_Panc/Results/Candidate_miRNAs.csv,final/supporting result table
+results/tables/mirna/Candidate_miRNAs_ExoCarta_YesNo.csv,R_proj/Proj_Panc/Results/Candidate_miRNAs_ExoCarta_YesNo.csv,final/supporting result table
+results/tables/mirna/EV_miRNA_DEG.csv,R_proj/Proj_Panc/Results/EV_miRNA_DEG.csv,final/supporting result table
+results/tables/mirna/EV_significant_miRNAs.csv,R_proj/Proj_Panc/Results/EV_significant_miRNAs.csv,final/supporting result table
+results/tables/mirna/EV_Wilcoxon.csv,R_proj/Proj_Panc/Results/EV_Wilcoxon.csv,final/supporting result table
+results/tables/mirna/EV_Validated_miRNAs.csv,R_proj/Proj_Panc/Results/EV_Validated_miRNAs.csv,final/supporting result table
+results/tables/mirna/GSE259327_Validation_DEG.csv,R_proj/Proj_Panc/Results/GSE259327_Validation_DEG.csv,final/supporting result table
+results/tables/mirna/AUC_CV_results.csv,R_proj/Proj_Panc/Results/AUC_CV_results.csv,final/supporting result table
+results/tables/mirna/GSE259327_all_miRNA_deseq_results.csv,R_proj/FINAL_PDAC_BIOMARKER_PANEL.csv,final/supporting result table
+results/tables/mirna/miR107_miR20a5p_Shared12_Validated_Raw_Records.csv,R_proj/Proj_Panc/Results/miR107_miR20a5p_Shared12_Validated_Raw_Records.csv,final/supporting result table
+results/tables/mirna/Shared12_Genes_17EVmiRNA_Associations.csv,R_proj/Proj_Panc/Results/Shared12_Genes_17EVmiRNA_Associations.csv,final/supporting result table
+results/tables/mirna/Shared12_Genes_Final6miRNA_Associations.csv,R_proj/Proj_Panc/Results/Shared12_Genes_Final6miRNA_Associations.csv,final/supporting result table
+results/tables/mirna/Shared12_Gene_miRNA_Association_Summary.csv,R_proj/Proj_Panc/Results/Shared12_Gene_miRNA_Association_Summary.csv,final/supporting result table
+results/tables/mirna/Shared12_Gene_Ranking_Validated_miR107_miR20a5p.csv,R_proj/Proj_Panc/Results/Shared12_Gene_Ranking_Validated_miR107_miR20a5p.csv,final/supporting result table
+results/tables/mirna/Shared12_miRNA_Association_Summary.csv,R_proj/Proj_Panc/Results/Shared12_miRNA_Association_Summary.csv,final/supporting result table
+results/tables/mirna/Shared12_miRNA_Validated_Evidence_Summary.csv,R_proj/Proj_Panc/Results/Shared12_miRNA_Validated_Evidence_Summary.csv,final/supporting result table
+results/tables/mirna/Supplementary_Validated_Evidence_miR107_miR20a5p_Shared12.csv,R_proj/Proj_Panc/Results/Supplementary_Validated_Evidence_miR107_miR20a5p_Shared12.csv,final/supporting result table
+results/tables/mirna/Cytoscape_Curated_miRNA_HubGene_Edges.csv,R_proj/Proj_Panc/Results/Cytoscape_Curated_miRNA_HubGene_Edges.csv,final/supporting result table
+results/tables/mirna/Cytoscape_Curated_miRNA_HubGene_Nodes.csv,R_proj/Proj_Panc/Results/Cytoscape_Curated_miRNA_HubGene_Nodes.csv,final/supporting result table
+results/tables/enrichment_ppi/cytoscape/MCODE_Module_Summary.csv,R_proj/Proj_Panc/Cytoscape/MCODE_Module_Summary.csv,Cytoscape MCODE supporting output
+results/tables/enrichment_ppi/cytoscape/MCODE_Results.txt,R_proj/Proj_Panc/Cytoscape/MCODE_Results.txt,Cytoscape MCODE supporting output
+results/tables/enrichment_ppi/cytoscape/Module1_Genes.txt,R_proj/Proj_Panc/Cytoscape/Module1_Genes.txt,Cytoscape MCODE supporting output
+results/tables/enrichment_ppi/cytoscape/Module2_Genes.txt,R_proj/Proj_Panc/Cytoscape/Module2_Genes.txt,Cytoscape MCODE supporting output
+results/tables/enrichment_ppi/cytoscape/Module3_Genes.txt,R_proj/Proj_Panc/Cytoscape/Module3_Genes.txt,Cytoscape MCODE supporting output
+results/networks/Supplementary_Curated_miRNA_HubGene_Network.graphml,R_proj/Proj_Panc/Results/Supplementary_Curated_miRNA_HubGene_Network.graphml,portable network file
+results/networks/Shared12_Genes_17EVmiRNA_Network.graphml,R_proj/Proj_Panc/Results/Shared12_Genes_17EVmiRNA_Network.graphml,portable network file
+results/networks/Shared12_Genes_Final6miRNA_Network.graphml,R_proj/Proj_Panc/Results/Shared12_Genes_Final6miRNA_Network.graphml,portable network file
+results/figures/manuscript/Figure_1_integrated_workflow.png,Corrected_draft_part_1.docx/word/media/image1.png,"exact PNG embedded in corrected manuscript, plus matching PDF"
+results/figures/manuscript/Figure_1_integrated_workflow.pdf,results/figures/manuscript/Figure_1_integrated_workflow.png,PDF version generated from PNG
+results/figures/manuscript/Figure_2_differential_expression_malignant_switch.png,Corrected_draft_part_1.docx/word/media/image2.png,"exact PNG embedded in corrected manuscript, plus matching PDF"
+results/figures/manuscript/Figure_2_differential_expression_malignant_switch.pdf,results/figures/manuscript/Figure_2_differential_expression_malignant_switch.png,PDF version generated from PNG
+results/figures/manuscript/Figure_3_spatial_validation_stage_association.png,Corrected_draft_part_1.docx/word/media/image3.png,"exact PNG embedded in corrected manuscript, plus matching PDF"
+results/figures/manuscript/Figure_3_spatial_validation_stage_association.pdf,results/figures/manuscript/Figure_3_spatial_validation_stage_association.png,PDF version generated from PNG
+results/figures/manuscript/Figure_4_functional_enrichment_ppi_prioritization.png,Corrected_draft_part_1.docx/word/media/image4.png,"exact PNG embedded in corrected manuscript, plus matching PDF"
+results/figures/manuscript/Figure_4_functional_enrichment_ppi_prioritization.pdf,results/figures/manuscript/Figure_4_functional_enrichment_ppi_prioritization.png,PDF version generated from PNG
+results/figures/manuscript/Figure_5_shared_stage_associated_hub_genes.png,Corrected_draft_part_1.docx/word/media/image5.png,"exact PNG embedded in corrected manuscript, plus matching PDF"
+results/figures/manuscript/Figure_5_shared_stage_associated_hub_genes.pdf,results/figures/manuscript/Figure_5_shared_stage_associated_hub_genes.png,PDF version generated from PNG
+results/figures/manuscript/Figure_6_ev_mirna_panel_performance.png,Corrected_draft_part_1.docx/word/media/image6.png,"exact PNG embedded in corrected manuscript, plus matching PDF"
+results/figures/manuscript/Figure_6_ev_mirna_panel_performance.pdf,results/figures/manuscript/Figure_6_ev_mirna_panel_performance.png,PDF version generated from PNG
+results/figures/manuscript/Figure_7_secondary_gse268771_assessment.png,Corrected_draft_part_1.docx/word/media/image7.png,"exact PNG embedded in corrected manuscript, plus matching PDF"
+results/figures/manuscript/Figure_7_secondary_gse268771_assessment.pdf,results/figures/manuscript/Figure_7_secondary_gse268771_assessment.png,PDF version generated from PNG
+results/figures/manuscript/Supplementary_Figure_S1_curated_mirna_hub_network.png,Corrected_draft_part_1.docx/word/media/image8.png,"exact PNG embedded in corrected manuscript, plus matching PDF"
+results/figures/manuscript/Supplementary_Figure_S1_curated_mirna_hub_network.pdf,results/figures/manuscript/Supplementary_Figure_S1_curated_mirna_hub_network.png,PDF version generated from PNG
+results/figures/components/Figure_3_Spatial_Validation_and_Stage_Association.png,R_proj/Proj_Panc/Results/Figure_3_Spatial_Validation_and_Stage_Association.png,effective component figure output
+results/figures/components/Figure_3_Spatial_Validation_and_Stage_Association.pdf,R_proj/Proj_Panc/Results/Figure_3_Spatial_Validation_and_Stage_Association.pdf,effective component figure output
+results/figures/components/Figure_Overlap_59StageAssociated_18PPIHubs_12Shared.png,R_proj/Proj_Panc/Results/Figure_Overlap_59StageAssociated_18PPIHubs_12Shared.png,effective component figure output
+results/figures/components/Figure_Overlap_59StageAssociated_18PPIHubs_12Shared.pdf,R_proj/Proj_Panc/Results/Figure_Overlap_59StageAssociated_18PPIHubs_12Shared.pdf,effective component figure output
+results/figures/components/Figure_Heatmap_12_Shared_StageAssociated_PPIHub_Genes.png,R_proj/Proj_Panc/Results/Figure_Heatmap_12_Shared_StageAssociated_PPIHub_Genes.png,effective component figure output
+results/figures/components/Figure_Heatmap_12_Shared_StageAssociated_PPIHub_Genes.pdf,R_proj/Proj_Panc/Results/Figure_Heatmap_12_Shared_StageAssociated_PPIHub_Genes.pdf,effective component figure output
+results/figures/components/GO_BP_Dotplot.png,R_proj/Proj_Panc/Results/GO_BP_Dotplot.png,effective component figure output
+results/figures/components/GO_BP_Dotplot.pdf,results/figures/components/GO_BP_Dotplot.png,PDF version generated from PNG
+results/figures/components/KEGG_80_Genes_Dotplot.png,R_proj/Proj_Panc/Results/KEGG_80_Genes_Dotplot.png,effective component figure output
+results/figures/components/KEGG_80_Genes_Dotplot.pdf,results/figures/components/KEGG_80_Genes_Dotplot.png,PDF version generated from PNG
+results/figures/components/EV_Volcano.png,R_proj/Proj_Panc/Results/EV_Volcano.png,effective component figure output
+results/figures/components/EV_Volcano.pdf,R_proj/Proj_Panc/Results/EV_Volcano.pdf,effective component figure output
+results/figures/components/EV_miRNA_All_Boxplots.png,R_proj/Proj_Panc/Results/EV_miRNA_All_Boxplots.png,effective component figure output
+results/figures/components/EV_miRNA_All_Boxplots.pdf,R_proj/Proj_Panc/Results/EV_miRNA_All_Boxplots.pdf,effective component figure output
+results/figures/components/GSE259327_Validation_Volcano.png,R_proj/Proj_Panc/Results/GSE259327_Validation_Volcano.png,effective component figure output
+results/figures/components/GSE259327_Validation_Volcano.pdf,results/figures/components/GSE259327_Validation_Volcano.png,PDF version generated from PNG
+results/figures/components/Six_miRNA_Boxplots_GSE259327.png,R_proj/Proj_Panc/Results/Six_miRNA_Boxplots_GSE259327.png,effective component figure output
+results/figures/components/Six_miRNA_Boxplots_GSE259327.pdf,results/figures/components/Six_miRNA_Boxplots_GSE259327.png,PDF version generated from PNG
+results/figures/components/ROC_Final_Panel.png,R_proj/Proj_Panc/Results/ROC_Final_Panel.png,effective component figure output
+results/figures/components/ROC_Final_Panel.pdf,results/figures/components/ROC_Final_Panel.png,PDF version generated from PNG
+results/figures/components/CV_ROC.png,R_proj/Proj_Panc/Results/CV_ROC.png,effective component figure output
+results/figures/components/CV_ROC.pdf,results/figures/components/CV_ROC.png,PDF version generated from PNG
+results/figures/components/Final_Biomarker_Summary.png,R_proj/Proj_Panc/Results/Final_Biomarker_Summary.png,effective component figure output
+results/figures/components/Final_Biomarker_Summary.pdf,R_proj/Proj_Panc/Results/Final_Biomarker_Summary.pdf,effective component figure output
+

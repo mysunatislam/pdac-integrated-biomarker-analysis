@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns
+         http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+<!-- Created by igraph -->
+  <key id="v_name" for="node" attr.name="name" attr.type="string"/>
+  <key id="v_Label" for="node" attr.name="Label" attr.type="string"/>
+  <key id="v_Node_Type" for="node" attr.name="Node_Type" attr.type="string"/>
+  <key id="v_Total_Validated_Records" for="node" attr.name="Total_Validated_Records" attr.type="double"/>
+  <key id="v_Total_Associated_PMIDs" for="node" attr.name="Total_Associated_PMIDs" attr.type="double"/>
+  <key id="v_miR107_Records" for="node" attr.name="miR107_Records" attr.type="double"/>
+  <key id="v_miR20a5p_Records" for="node" attr.name="miR20a5p_Records" attr.type="double"/>
+  <key id="v_Evidence_Note" for="node" attr.name="Evidence_Note" attr.type="string"/>
+  <key id="e_Interaction" for="edge" attr.name="Interaction" attr.type="string"/>
+  <key id="e_MicroRNA" for="edge" attr.name="MicroRNA" attr.type="string"/>
+  <key id="e_Gene" for="edge" attr.name="Gene" attr.type="string"/>
+  <key id="e_Validated_Record_Count" for="edge" attr.name="Validated_Record_Count" attr.type="double"/>
+  <key id="e_Unique_PubMed_Count" for="edge" attr.name="Unique_PubMed_Count" attr.type="double"/>
+  <key id="e_Supporting_Database_Count" for="edge" attr.name="Supporting_Database_Count" attr.type="double"/>
+  <key id="e_Supporting_Databases" for="edge" attr.name="Supporting_Databases" attr.type="string"/>
+  <key id="e_CLIP_or_HighThroughput_Present" for="edge" attr.name="CLIP_or_HighThroughput_Present" attr.type="boolean"/>
+  <key id="e_Evidence_Tier" for="edge" attr.name="Evidence_Tier" attr.type="string"/>
+  <key id="e_Edge_Width_Value" for="edge" attr.name="Edge_Width_Value" attr.type="double"/>
+  <key id="e_Edge_Label" for="edge" attr.name="Edge_Label" attr.type="string"/>
+  <graph id="G" edgedefault="directed">
+    <node id="n0">
+      <data key="v_name">hsa-miR-107</data>
+      <data key="v_Label">hsa-miR-107</data>
+      <data key="v_Node_Type">Final six-miRNA diagnostic-panel member</data>
+      <data key="v_Total_Validated_Records">14</data>
+      <data key="v_Total_Associated_PMIDs">67</data>
+      <data key="v_Evidence_Note">Other shared hub gene</data>
+    </node>
+    <node id="n1">
+      <data key="v_name">hsa-miR-20a-5p</data>
+      <data key="v_Label">hsa-miR-20a-5p</data>
+      <data key="v_Node_Type">Final six-miRNA diagnostic-panel member</data>
+      <data key="v_Total_Validated_Records">14</data>
+      <data key="v_Total_Associated_PMIDs">73</data>
+      <data key="v_Evidence_Note">Other shared hub gene</data>
+    </node>
+    <node id="n2">
+      <data key="v_name">CCNB1</data>
+      <data key="v_Label">CCNB1</data>
+      <data key="v_Node_Type">Shared stage-associated PPI hub gene</data>
+      <data key="v_Total_Validated_Records">4</data>
+      <data key="v_Total_Associated_PMIDs">24</data>
+      <data key="v_miR107_Records">1</data>
+      <data key="v_miR20a5p_Records">3</data>
+      <data key="v_Evidence_Note">Highest associated PMID count across both miRNAs</data>
+    </node>
+    <node id="n3">
+      <data key="v_name">ACTB</data>
+      <data key="v_Label">ACTB</data>
+      <data key="v_Node_Type">Shared stage-associated PPI hub gene</data>
+      <data key="v_Total_Validated_Records">2</data>
+      <data key="v_Total_Associated_PMIDs">15</data>
+      <data key="v_miR107_Records">1</data>
+      <data key="v_miR20a5p_Records">1</data>
+      <data key="v_Evidence_Note">Other shared hub gene</data>
+    </node>
+    <node id="n4">
+      <data key="v_name">MKI67</data>
+      <data key="v_Label">MKI67</data>
+      <data key="v_Node_Type">Shared stage-associated PPI hub gene</data>
+      <data key="v_Total_Validated_Records">2</data>
+      <data key="v_Total_Associated_PMIDs">14</data>
+      <data key="v_miR107_Records">1</data>
+      <data key="v_miR20a5p_Records">1</data>
+      <data key="v_Evidence_Note">Other shared hub gene</data>
+    </node>
+    <node id="n5">
+      <data key="v_name">ANLN</data>
+      <data key="v_Label">ANLN</data>
+      <data key="v_Node_Type">Shared stage-associated PPI hub gene</data>
+      <data key="v_Total_Validated_Records">2</data>
+      <data key="v_Total_Associated_PMIDs">13</data>
+      <data key="v_miR107_Records">1</data>
+      <data key="v_miR20a5p_Records">1</data>
+      <data key="v_Evidence_Note">Other shared hub gene</data>
+    </node>
+    <node id="n6">
+      <data key="v_name">TOP2A</data>
+      <data key="v_Label">TOP2A</data>
+      <data key="v_Node_Type">Shared stage-associated PPI hub gene</data>
+      <data key="v_Total_Validated_Records">2</data>
+      <data key="v_Total_Associated_PMIDs">12</data>
+      <data key="v_miR107_Records">1</data>
+      <data key="v_miR20a5p_Records">1</data>
+      <data key="v_Evidence_Note">Other shared hub gene</data>
+    </node>
+    <node id="n7">
+      <data key="v_name">CASP3</data>
+      <data key="v_Label">CASP3</data>
+      <data key="v_Node_Type">Shared stage-associated PPI hub gene</data>
+      <data key="v_Total_Validated_Records">2</data>
+      <data key="v_Total_Associated_PMIDs">6</data>
+      <data key="v_miR107_Records">1</data>
+      <data key="v_miR20a5p_Records">1</data>
+      <data key="v_Evidence_Note">Other shared hub gene</data>
+    </node>
+    <node id="n8">
+      <data key="v_name">CENPF</data>
+      <data key="v_Label">CENPF</data>
+      <data key="v_Node_Type">Shared stage-associated PPI hub gene</data>
+      <data key="v_Total_Validated_Records">2</data>
+      <data key="v_Total_Associated_PMIDs">6</data>
+      <data key="v_miR107_Records">1</data>
+      <data key="v_miR20a5p_Records">1</data>
+      <data key="v_Evidence_Note">Other shared hub gene</data>
+    </node>
+    <node id="n9">
+      <data key="v_name">ITGA2</data>
+      <data key="v_Label">ITGA2</data>
+      <data key="v_Node_Type">Shared stage-associated PPI hub gene</data>
+      <data key="v_Total_Validated_Records">6</data>
+      <data key="v_Total_Associated_PMIDs">5</data>
+      <data key="v_miR107_Records">3</data>
+      <data key="v_miR20a5p_Records">3</data>
+      <data key="v_Evidence_Note">Broadest curated record support across both miRNAs</data>
+    </node>
+    <node id="n10">
+      <data key="v_name">FOXM1</data>
+      <data key="v_Label">FOXM1</data>
+      <data key="v_Node_Type">Shared stage-associated PPI hub gene</data>
+      <data key="v_Total_Validated_Records">2</data>
+      <data key="v_Total_Associated_PMIDs">5</data>
+      <data key="v_miR107_Records">1</data>
+      <data key="v_miR20a5p_Records">1</data>
+      <data key="v_Evidence_Note">Other shared hub gene</data>
+    </node>
+    <node id="n11">
+      <data key="v_name">STAT1</data>
+      <data key="v_Label">STAT1</data>
+      <data key="v_Node_Type">Shared stage-associated PPI hub gene</data>
+      <data key="v_Total_Validated_Records">2</data>
+      <data key="v_Total_Associated_PMIDs">3</data>
+      <data key="v_miR107_Records">1</data>
+      <data key="v_miR20a5p_Records">1</data>
+      <data key="v_Evidence_Note">Other shared hub gene</data>
+    </node>
+    <node id="n12">
+      <data key="v_name">CCNA2</data>
+      <data key="v_Label">CCNA2</data>
+      <data key="v_Node_Type">Shared stage-associated PPI hub gene</data>
+      <data key="v_Total_Validated_Records">1</data>
+      <data key="v_Total_Associated_PMIDs">5</data>
+      <data key="v_miR107_Records">1</data>
+      <data key="v_miR20a5p_Records">0</data>
+      <data key="v_Evidence_Note">Other shared hub gene</data>
+    </node>
+    <node id="n13">
+      <data key="v_name">PCNA</data>
+      <data key="v_Label">PCNA</data>
+      <data key="v_Node_Type">Shared stage-associated PPI hub gene</data>
+      <data key="v_Total_Validated_Records">1</data>
+      <data key="v_Total_Associated_PMIDs">5</data>
+      <data key="v_miR107_Records">1</data>
+      <data key="v_miR20a5p_Records">0</data>
+      <data key="v_Evidence_Note">Other shared hub gene</data>
+    </node>
+    <edge source="n0" target="n3">
+      <data key="e_Interaction">Curated high-throughput miRNA-target association</data>
+      <data key="e_MicroRNA">hsa-miR-107</data>
+      <data key="e_Gene">ACTB</data>
+      <data key="e_Validated_Record_Count">1</data>
+      <data key="e_Unique_PubMed_Count">13</data>
+      <data key="e_Supporting_Database_Count">1</data>
+      <data key="e_Supporting_Databases">tarbase</data>
+      <data key="e_CLIP_or_HighThroughput_Present">true</data>
+      <data key="e_Evidence_Tier">Tier C: CLIP/high-throughput evidence</data>
+      <data key="e_Edge_Width_Value">1</data>
+      <data key="e_Edge_Label">hsa-miR-107 → ACTB | Records: 1</data>
+    </edge>
+    <edge source="n0" target="n2">
+      <data key="e_Interaction">Curated high-throughput miRNA-target association</data>
+      <data key="e_MicroRNA">hsa-miR-107</data>
+      <data key="e_Gene">CCNB1</data>
+      <data key="e_Validated_Record_Count">1</data>
+      <data key="e_Unique_PubMed_Count">12</data>
+      <data key="e_Supporting_Database_Count">1</data>
+      <data key="e_Supporting_Databases">tarbase</data>
+      <data key="e_CLIP_or_HighThroughput_Present">true</data>
+      <data key="e_Evidence_Tier">Tier C: CLIP/high-throughput evidence</data>
+      <data key="e_Edge_Width_Value">1</data>
+      <data key="e_Edge_Label">hsa-miR-107 → CCNB1 | Records: 1</data>
+    </edge>
+    <edge source="n0" target="n6">
+      <data key="e_Interaction">Curated high-throughput miRNA-target association</data>
+      <data key="e_MicroRNA">hsa-miR-107</data>
+      <data key="e_Gene">TOP2A</data>
+      <data key="e_Validated_Record_Count">1</data>
+      <data key="e_Unique_PubMed_Count">8</data>
+      <data key="e_Supporting_Database_Count">1</data>
+      <data key="e_Supporting_Databases">tarbase</data>
+      <data key="e_CLIP_or_HighThroughput_Present">true</data>
+      <data key="e_Evidence_Tier">Tier C: CLIP/high-throughput evidence</data>
+      <data key="e_Edge_Width_Value">1</data>
+      <data key="e_Edge_Label">hsa-miR-107 → TOP2A | Records: 1</data>
+    </edge>
+    <edge source="n0" target="n5">
+      <data key="e_Interaction">Curated high-throughput miRNA-target association</data>
+      <data key="e_MicroRNA">hsa-miR-107</data>
+      <data key="e_Gene">ANLN</data>
+      <data key="e_Validated_Record_Count">1</data>
+      <data key="e_Unique_PubMed_Count">5</data>
+      <data key="e_Supporting_Database_Count">1</data>
+      <data key="e_Supporting_Databases">tarbase</data>
+      <data key="e_CLIP_or_HighThroughput_Present">true</data>
+      <data key="e_Evidence_Tier">Tier C: CLIP/high-throughput evidence</data>
+      <data key="e_Edge_Width_Value">1</data>
+      <data key="e_Edge_Label">hsa-miR-107 → ANLN | Records: 1</data>
+    </edge>
+    <edge source="n0" target="n12">
+      <data key="e_Interaction">Curated high-throughput miRNA-target association</data>
+      <data key="e_MicroRNA">hsa-miR-107</data>
+      <data key="e_Gene">CCNA2</data>
+      <data key="e_Validated_Record_Count">1</data>
+      <data key="e_Unique_PubMed_Count">5</data>
+      <data key="e_Supporting_Database_Count">1</data>
+      <data key="e_Supporting_Databases">tarbase</data>
+      <data key="e_CLIP_or_HighThroughput_Present">true</data>
+      <data key="e_Evidence_Tier">Tier C: CLIP/high-throughput evidence</data>
+      <data key="e_Edge_Width_Value">1</data>
+      <data key="e_Edge_Label">hsa-miR-107 → CCNA2 | Records: 1</data>
+    </edge>
+    <edge source="n0" target="n13">
+      <data key="e_Interaction">Curated high-throughput miRNA-target association</data>
+      <data key="e_MicroRNA">hsa-miR-107</data>
+      <data key="e_Gene">PCNA</data>
+      <data key="e_Validated_Record_Count">1</data>
+      <data key="e_Unique_PubMed_Count">5</data>
+      <data key="e_Supporting_Database_Count">1</data>
+      <data key="e_Supporting_Databases">tarbase</data>
+      <data key="e_CLIP_or_HighThroughput_Present">true</data>
+      <data key="e_Evidence_Tier">Tier C: CLIP/high-throughput evidence</data>
+      <data key="e_Edge_Width_Value">1</data>
+      <data key="e_Edge_Label">hsa-miR-107 → PCNA | Records: 1</data>
+    </edge>
+    <edge source="n0" target="n10">
+      <data key="e_Interaction">Curated high-throughput miRNA-target association</data>
+      <data key="e_MicroRNA">hsa-miR-107</data>
+      <data key="e_Gene">FOXM1</data>
+      <data key="e_Validated_Record_Count">1</data>
+      <data key="e_Unique_PubMed_Count">4</data>
+      <data key="e_Supporting_Database_Count">1</data>
+      <data key="e_Supporting_Databases">tarbase</data>
+      <data key="e_CLIP_or_HighThroughput_Present">true</data>
+      <data key="e_Evidence_Tier">Tier C: CLIP/high-throughput evidence</data>
+      <data key="e_Edge_Width_Value">1</data>
+      <data key="e_Edge_Label">hsa-miR-107 → FOXM1 | Records: 1</data>
+    </edge>
+    <edge source="n0" target="n4">
+      <data key="e_Interaction">Curated high-throughput miRNA-target association</data>
+      <data key="e_MicroRNA">hsa-miR-107</data>
+      <data key="e_Gene">MKI67</data>
+      <data key="e_Validated_Record_Count">1</data>
+      <data key="e_Unique_PubMed_Count">4</data>
+      <data key="e_Supporting_Database_Count">1</data>
+      <data key="e_Supporting_Databases">tarbase</data>
+      <data key="e_CLIP_or_HighThroughput_Present">true</data>
+      <data key="e_Evidence_Tier">Tier C: CLIP/high-throughput evidence</data>
+      <data key="e_Edge_Width_Value">1</data>
+      <data key="e_Edge_Label">hsa-miR-107 → MKI67 | Records: 1</data>
+    </edge>
+    <edge source="n0" target="n9">
+      <data key="e_Interaction">Curated high-throughput miRNA-target association</data>
+      <data key="e_MicroRNA">hsa-miR-107</data>
+      <data key="e_Gene">ITGA2</data>
+      <data key="e_Validated_Record_Count">3</data>
+      <data key="e_Unique_PubMed_Count">3</data>
+      <data key="e_Supporting_Database_Count">2</data>
+      <data key="e_Supporting_Databases">mirtarbase; tarbase</data>
+      <data key="e_CLIP_or_HighThroughput_Present">true</data>
+      <data key="e_Evidence_Tier">Tier C: CLIP/high-throughput evidence</data>
+      <data key="e_Edge_Width_Value">3</data>
+      <data key="e_Edge_Label">hsa-miR-107 → ITGA2 | Records: 3</data>
+    </edge>
+    <edge source="n0" target="n7">
+      <data key="e_Interaction">Curated high-throughput miRNA-target association</data>
+      <data key="e_MicroRNA">hsa-miR-107</data>
+      <data key="e_Gene">CASP3</data>
+      <data key="e_Validated_Record_Count">1</data>
+      <data key="e_Unique_PubMed_Count">3</data>
+      <data key="e_Supporting_Database_Count">1</data>
+      <data key="e_Supporting_Databases">tarbase</data>
+      <data key="e_CLIP_or_HighThroughput_Present">true</data>
+      <data key="e_Evidence_Tier">Tier C: CLIP/high-throughput evidence</data>
+      <data key="e_Edge_Width_Value">1</data>
+      <data key="e_Edge_Label">hsa-miR-107 → CASP3 | Records: 1</data>
+    </edge>
+    <edge source="n0" target="n8">
+      <data key="e_Interaction">Curated high-throughput miRNA-target association</data>
+      <data key="e_MicroRNA">hsa-miR-107</data>
+      <data key="e_Gene">CENPF</data>
+      <data key="e_Validated_Record_Count">1</data>
+      <data key="e_Unique_PubMed_Count">3</data>
+      <data key="e_Supporting_Database_Count">1</data>
+      <data key="e_Supporting_Databases">tarbase</data>
+      <data key="e_CLIP_or_HighThroughput_Present">true</data>
+      <data key="e_Evidence_Tier">Tier C: CLIP/high-throughput evidence</data>
+      <data key="e_Edge_Width_Value">1</data>
+      <data key="e_Edge_Label">hsa-miR-107 → CENPF | Records: 1</data>
+    </edge>
+    <edge source="n0" target="n11">
+      <data key="e_Interaction">Curated high-throughput miRNA-target association</data>
+      <data key="e_MicroRNA">hsa-miR-107</data>
+      <data key="e_Gene">STAT1</data>
+      <data key="e_Validated_Record_Count">1</data>
+      <data key="e_Unique_PubMed_Count">2</data>
+      <data key="e_Supporting_Database_Count">1</data>
+      <data key="e_Supporting_Databases">tarbase</data>
+      <data key="e_CLIP_or_HighThroughput_Present">true</data>
+      <data key="e_Evidence_Tier">Tier C: CLIP/high-throughput evidence</data>
+      <data key="e_Edge_Width_Value">1</data>
+      <data key="e_Edge_Label">hsa-miR-107 → STAT1 | Records: 1</data>
+    </edge>
+    <edge source="n1" target="n2">
+      <data key="e_Interaction">Curated high-throughput miRNA-target association</data>
+      <data key="e_MicroRNA">hsa-miR-20a-5p</data>
+      <data key="e_Gene">CCNB1</data>
+      <data key="e_Validated_Record_Count">3</data>
+      <data key="e_Unique_PubMed_Count">19</data>
+      <data key="e_Supporting_Database_Count">2</data>
+      <data key="e_Supporting_Databases">mirtarbase; tarbase</data>
+      <data key="e_CLIP_or_HighThroughput_Present">true</data>
+      <data key="e_Evidence_Tier">Tier C: CLIP/high-throughput evidence</data>
+      <data key="e_Edge_Width_Value">3</data>
+      <data key="e_Edge_Label">hsa-miR-20a-5p → CCNB1 | Records: 3</data>
+    </edge>
+    <edge source="n1" target="n4">
+      <data key="e_Interaction">Curated high-throughput miRNA-target association</data>
+      <data key="e_MicroRNA">hsa-miR-20a-5p</data>
+      <data key="e_Gene">MKI67</data>
+      <data key="e_Validated_Record_Count">1</data>
+      <data key="e_Unique_PubMed_Count">12</data>
+      <data key="e_Supporting_Database_Count">1</data>
+      <data key="e_Supporting_Databases">tarbase</data>
+      <data key="e_CLIP_or_HighThroughput_Present">true</data>
+      <data key="e_Evidence_Tier">Tier C: CLIP/high-throughput evidence</data>
+      <data key="e_Edge_Width_Value">1</data>
+      <data key="e_Edge_Label">hsa-miR-20a-5p → MKI67 | Records: 1</data>
+    </edge>
+    <edge source="n1" target="n5">
+      <data key="e_Interaction">Curated high-throughput miRNA-target association</data>
+      <data key="e_MicroRNA">hsa-miR-20a-5p</data>
+      <data key="e_Gene">ANLN</data>
+      <data key="e_Validated_Record_Count">1</data>
+      <data key="e_Unique_PubMed_Count">11</data>
+      <data key="e_Supporting_Database_Count">1</data>
+      <data key="e_Supporting_Databases">tarbase</data>
+      <data key="e_CLIP_or_HighThroughput_Present">true</data>
+      <data key="e_Evidence_Tier">Tier C: CLIP/high-throughput evidence</data>
+      <data key="e_Edge_Width_Value">1</data>
+      <data key="e_Edge_Label">hsa-miR-20a-5p → ANLN | Records: 1</data>
+    </edge>
+    <edge source="n1" target="n6">
+      <data key="e_Interaction">Curated high-throughput miRNA-target association</data>
+      <data key="e_MicroRNA">hsa-miR-20a-5p</data>
+      <data key="e_Gene">TOP2A</data>
+      <data key="e_Validated_Record_Count">1</data>
+      <data key="e_Unique_PubMed_Count">10</data>
+      <data key="e_Supporting_Database_Count">1</data>
+      <data key="e_Supporting_Databases">tarbase</data>
+      <data key="e_CLIP_or_HighThroughput_Present">true</data>
+      <data key="e_Evidence_Tier">Tier C: CLIP/high-throughput evidence</data>
+      <data key="e_Edge_Width_Value">1</data>
+      <data key="e_Edge_Label">hsa-miR-20a-5p → TOP2A | Records: 1</data>
+    </edge>
+    <edge source="n1" target="n3">
+      <data key="e_Interaction">Curated high-throughput miRNA-target association</data>
+      <data key="e_MicroRNA">hsa-miR-20a-5p</data>
+      <data key="e_Gene">ACTB</data>
+      <data key="e_Validated_Record_Count">1</data>
+      <data key="e_Unique_PubMed_Count">6</data>
+      <data key="e_Supporting_Database_Count">1</data>
+      <data key="e_Supporting_Databases">tarbase</data>
+      <data key="e_CLIP_or_HighThroughput_Present">true</data>
+      <data key="e_Evidence_Tier">Tier C: CLIP/high-throughput evidence</data>
+      <data key="e_Edge_Width_Value">1</data>
+      <data key="e_Edge_Label">hsa-miR-20a-5p → ACTB | Records: 1</data>
+    </edge>
+    <edge source="n1" target="n7">
+      <data key="e_Interaction">Curated high-throughput miRNA-target association</data>
+      <data key="e_MicroRNA">hsa-miR-20a-5p</data>
+      <data key="e_Gene">CASP3</data>
+      <data key="e_Validated_Record_Count">1</data>
+      <data key="e_Unique_PubMed_Count">5</data>
+      <data key="e_Supporting_Database_Count">1</data>
+      <data key="e_Supporting_Databases">tarbase</data>
+      <data key="e_CLIP_or_HighThroughput_Present">true</data>
+      <data key="e_Evidence_Tier">Tier C: CLIP/high-throughput evidence</data>
+      <data key="e_Edge_Width_Value">1</data>
+      <data key="e_Edge_Label">hsa-miR-20a-5p → CASP3 | Records: 1</data>
+    </edge>
+    <edge source="n1" target="n8">
+      <data key="e_Interaction">Curated high-throughput miRNA-target association</data>
+      <data key="e_MicroRNA">hsa-miR-20a-5p</data>
+      <data key="e_Gene">CENPF</data>
+      <data key="e_Validated_Record_Count">1</data>
+      <data key="e_Unique_PubMed_Count">4</data>
+      <data key="e_Supporting_Database_Count">1</data>
+      <data key="e_Supporting_Databases">tarbase</data>
+      <data key="e_CLIP_or_HighThroughput_Present">true</data>
+      <data key="e_Evidence_Tier">Tier C: CLIP/high-throughput evidence</data>
+      <data key="e_Edge_Width_Value">1</data>
+      <data key="e_Edge_Label">hsa-miR-20a-5p → CENPF | Records: 1</data>
+    </edge>
+    <edge source="n1" target="n9">
+      <data key="e_Interaction">Curated high-throughput miRNA-target association</data>
+      <data key="e_MicroRNA">hsa-miR-20a-5p</data>
+      <data key="e_Gene">ITGA2</data>
+      <data key="e_Validated_Record_Count">3</data>
+      <data key="e_Unique_PubMed_Count">3</data>
+      <data key="e_Supporting_Database_Count">2</data>
+      <data key="e_Supporting_Databases">mirtarbase; tarbase</data>
+      <data key="e_CLIP_or_HighThroughput_Present">true</data>
+      <data key="e_Evidence_Tier">Tier C: CLIP/high-throughput evidence</data>
+      <data key="e_Edge_Width_Value">3</data>
+      <data key="e_Edge_Label">hsa-miR-20a-5p → ITGA2 | Records: 3</data>
+    </edge>
+    <edge source="n1" target="n11">
+      <data key="e_Interaction">Curated high-throughput miRNA-target association</data>
+      <data key="e_MicroRNA">hsa-miR-20a-5p</data>
+      <data key="e_Gene">STAT1</data>
+      <data key="e_Validated_Record_Count">1</data>
+      <data key="e_Unique_PubMed_Count">2</data>
+      <data key="e_Supporting_Database_Count">1</data>
+      <data key="e_Supporting_Databases">tarbase</data>
+      <data key="e_CLIP_or_HighThroughput_Present">true</data>
+      <data key="e_Evidence_Tier">Tier C: CLIP/high-throughput evidence</data>
+      <data key="e_Edge_Width_Value">1</data>
+      <data key="e_Edge_Label">hsa-miR-20a-5p → STAT1 | Records: 1</data>
+    </edge>
+    <edge source="n1" target="n10">
+      <data key="e_Interaction">Curated high-throughput miRNA-target association</data>
+      <data key="e_MicroRNA">hsa-miR-20a-5p</data>
+      <data key="e_Gene">FOXM1</data>
+      <data key="e_Validated_Record_Count">1</data>
+      <data key="e_Unique_PubMed_Count">1</data>
+      <data key="e_Supporting_Database_Count">1</data>
+      <data key="e_Supporting_Databases">tarbase</data>
+      <data key="e_CLIP_or_HighThroughput_Present">true</data>
+      <data key="e_Evidence_Tier">Tier C: CLIP/high-throughput evidence</data>
+      <data key="e_Edge_Width_Value">1</data>
+      <data key="e_Edge_Label">hsa-miR-20a-5p → FOXM1 | Records: 1</data>
+    </edge>
+  </graph>
+</graphml>

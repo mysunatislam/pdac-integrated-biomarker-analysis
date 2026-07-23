@@ -1,0 +1,14 @@
+.codex_tmp_extract/
+.Rproj.user/
+.Rhistory
+.RData
+.RDataTmp*
+*.RData
+*.rds
+*.tar
+*.zip
+*.CEL.gz
+~$*
+*.log
+Thumbs.db
+desktop.ini

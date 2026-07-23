@@ -1,0 +1,13 @@
+"Gene","Mean_Normal","Mean_ADM","Mean_PDAC","ANOVA_p","ANOVA_BH_FDR","Spearman_rho","Spearman_p","Spearman_BH_FDR","Stage_Associated","Monotonic_Trend","Classification","MCC_PPI_Rank","MCC_Score","Degree_PPI_Rank","Degree_Score"
+"TOP2A",68.83,66.96,93.19,8.707e-08,8.707e-07,0.534,9.229e-05,0.0002637,TRUE,TRUE,"Core progression-associated hub gene",3,1447,5,9
+"CCNA2",51.87,49.62,64.36,5.958e-06,2.979e-05,0.516,0.0001759,0.0004538,TRUE,TRUE,"Core progression-associated hub gene",2,1455,2,12
+"ITGA2",72.6,142.05,195.97,7.721e-06,3.627e-05,0.746,1.172e-09,8.521e-09,TRUE,TRUE,"Core progression-associated hub gene",17,9,15,5
+"STAT1",146.18,241.66,189.41,1.579e-05,6.317e-05,0.438,0.001831,0.003855,TRUE,TRUE,"Core progression-associated hub gene",15,11,6,8
+"ANLN",47.57,48.92,65.25,2.881e-05,0.0001098,0.543,6.591e-05,0.0002028,TRUE,TRUE,"Core progression-associated hub gene",7,720,13,6
+"MKI67",62.63,60.87,92.45,5.221e-05,0.0001899,0.556,4.045e-05,0.0001348,TRUE,TRUE,"Core progression-associated hub gene",5,1440,9,7
+"ACTB",3067.86,6033.83,8508.39,6.349e-05,0.0002208,0.687,6.963e-08,4.642e-07,TRUE,TRUE,"Core progression-associated hub gene",15,11,4,10
+"CENPF",56.72,54.83,68.43,8.938e-05,0.000286,0.392,0.005818,0.01034,TRUE,TRUE,"Core progression-associated hub gene",5,1440,9,7
+"CASP3",78.46,79.81,93.61,0.001788,0.003866,0.457,0.001101,0.002446,TRUE,TRUE,"Core progression-associated hub gene",9,24,1,14
+"FOXM1",68.96,65.28,79.22,0.004352,0.008928,0.278,0.05562,0.07806,TRUE,FALSE,"Stage-associated hub gene",7,720,13,6
+"CCNB1",61.69,59.52,69.2,0.01018,0.01809,0.26,0.07466,0.09955,TRUE,FALSE,"Stage-associated hub gene",1,1456,2,12
+"PCNA",148.63,136.84,157.66,0.0257,0.03738,0.09,0.5418,0.6105,TRUE,FALSE,"Stage-associated hub gene",18,8,15,5

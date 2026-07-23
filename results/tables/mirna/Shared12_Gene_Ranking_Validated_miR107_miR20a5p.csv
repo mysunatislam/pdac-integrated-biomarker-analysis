@@ -1,0 +1,13 @@
+"Gene","miR107_Validated_Records","miR20a5p_Validated_Records","miR107_Unique_PMIDs","miR20a5p_Unique_PMIDs","miR107_Reporter_Assay","miR20a5p_Reporter_Assay","miR107_Protein_Evidence","miR20a5p_Protein_Evidence","miR107_CLIP_or_HighThroughput","miR20a5p_CLIP_or_HighThroughput","Total_Validated_Records","Total_Unique_PMIDs","Total_Supporting_Databases","Supporting_Databases","Direct_Reporter_Pairs","Protein_Supported_Pairs","CLIP_or_HighThroughput_Pairs"
+"CCNB1",1,3,12,19,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,4,24,2,"mirtarbase; tarbase",0,0,2
+"ACTB",1,1,13,6,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,2,15,1,"tarbase",0,0,2
+"MKI67",1,1,4,12,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,2,14,1,"tarbase",0,0,2
+"ANLN",1,1,5,11,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,2,13,1,"tarbase",0,0,2
+"TOP2A",1,1,8,10,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,2,12,1,"tarbase",0,0,2
+"CASP3",1,1,3,5,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,2,6,1,"tarbase",0,0,2
+"CENPF",1,1,3,4,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,2,6,1,"tarbase",0,0,2
+"ITGA2",3,3,3,3,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,6,5,2,"mirtarbase; tarbase",0,0,2
+"FOXM1",1,1,4,1,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,2,5,1,"tarbase",0,0,2
+"STAT1",1,1,2,2,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,2,3,1,"tarbase",0,0,2
+"CCNA2",1,0,5,0,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,1,5,1,"tarbase",0,0,1
+"PCNA",1,0,5,0,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,1,5,1,"tarbase",0,0,1
