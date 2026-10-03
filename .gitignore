@@ -12,3 +12,7 @@
 *.log
 Thumbs.db
 desktop.ini
+.R-library/
+renv/library/
+renv/staging/
+tmp/figure_qa/

@@ -1,0 +1,17 @@
+"Model","Cohort","Outcome","Score.Min","Score.Median","Score.Max"
+"EV-ranked selection","Diagnostic","Control",3.848365e-04,5.093015e-02,9.777065e-01
+"Historical six","Diagnostic","Control",2.053831e-03,1.276019e-01,9.835111e-01
+"Published three (refit)","Diagnostic","Control",5.924291e-04,9.475770e-02,9.976130e-01
+"Unrestricted selection","Diagnostic","Control",1.796879e-05,8.062925e-02,9.793164e-01
+"EV-ranked selection","PLCO","Control",1.711695e-04,2.979937e-03,1.442176e-02
+"Historical six","PLCO","Control",7.814653e-04,5.363465e-03,5.900389e-02
+"Published three (refit)","PLCO","Control",4.662746e-06,2.931864e-03,1.886146e-01
+"Unrestricted selection","PLCO","Control",1.964562e-08,3.268383e-05,3.680874e-03
+"EV-ranked selection","Diagnostic","PDAC",7.208934e-02,9.342176e-01,9.988767e-01
+"Historical six","Diagnostic","PDAC",6.897322e-02,9.296449e-01,9.991286e-01
+"Published three (refit)","Diagnostic","PDAC",8.046587e-02,9.688120e-01,9.992386e-01
+"Unrestricted selection","Diagnostic","PDAC",8.961629e-02,9.739479e-01,9.993735e-01
+"EV-ranked selection","PLCO","PDAC",4.859213e-04,3.287588e-03,3.927703e-02
+"Historical six","PLCO","PDAC",3.987212e-04,8.520806e-03,3.440811e-01
+"Published three (refit)","PLCO","PDAC",1.834085e-05,1.776694e-03,1.117147e-01
+"Unrestricted selection","PLCO","PDAC",1.593779e-08,2.104306e-05,5.611166e-02

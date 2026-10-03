@@ -1,0 +1,154 @@
+# Corrected Analysis: Methods and Results
+
+Public-data analysis reviewed on 2026-10-04. This report is generated from the final tables by scripts/reanalysis/11_write_report.R. It supplies replacement methods/results material and an evidence assessment; it is not an author-approved submission manuscript.
+
+## Working Title
+
+Patient-aware tissue-state associations and prediagnostic transportability of plasma miRNA models in public PDAC cohorts
+
+## Research Questions
+
+We assessed whether tissue-state associations persist when spatial ROIs are treated as repeated observations, whether PDAC-versus-chronic-pancreatitis tissue contrasts remain after clinical adjustment, and whether EV-ranked miRNA selection improves diagnostic-to-prediagnostic transportability relative to fixed published/historical panels and unrestricted plasma selection. These are exploratory secondary analyses of previously published data.
+
+## Cohort Audit
+
+| Dataset | Deposited analysis sample | Role |
+| --- | --- | --- |
+| GSE143754 | 9 adjacent normal, 6 CP, 11 PDAC tissues | Bulk tissue comparison |
+| GSE208536 | 48 ROIs: 16 Normal, 16 ADM, 16 PDAC; eight inferred profiles | Spatial tissue-state analysis |
+| GSE304572 | 65 PDAC, 10 CP, 10 IPMN plasma EV samples | Independent exploratory miRNA ranking |
+| GSE259327 diagnostic | 121 PDAC, 82 pooled controls | Plasma model training |
+| GSE259327 PLCO | 48 prediagnostic PDAC, 48 controls | Same-assay external evaluation |
+| GSE268771 | 51 PDAC, 12 benign, 3 healthy plasma EV samples | Separate descriptive sensitivity cohort |
+
+The GSE259327 source studies report 46 healthy and 36 pancreatitis controls; chronic pancreatitis is a subset rather than a synonym for all 36 pancreatitis participants. The deposited sample records label controls only as Control, so subtype-specific ROC estimates cannot be reconstructed. The secondary EV PDAC stages are I/II/III/IV = 2/4/12/33. Spatial TMA identifiers were matched exactly to all 48 workbook columns. Age, sex, grade, and stage combinations identify eight distinct clinical profiles, consistent with the source design, but GEO does not supply explicit patient IDs. ROI counts are uneven; six profiles contain all three states, one lacks ADM, and one lacks Normal.
+
+## Methods
+
+### Bulk Tissue
+
+We used the deposited invariant-set-normalized, log-scale GSE143754 matrix rather than repeating raw CEL preprocessing. Transcript-cluster identifiers were mapped with hta20transcriptcluster.db 8.8.0. Ambiguous symbol mappings and unannotated identifiers were excluded. For multiple probes mapped to one symbol, the probe with the greatest mean expression across all samples was retained, with probe ID as the tie breaker; this rule does not use outcome labels.
+
+The primary limma model was restricted to 11 PDAC and six CP specimens, with a linear age covariate and sex. This excludes possibly paired adjacent-normal specimens because explicit patient pairing is unavailable. Contrast standard errors were moderated with empirical Bayes, trend = TRUE and robust = TRUE. Unadjusted PDAC-versus-CP estimates used the same 17 specimens. A separate three-group adjusted model supplied exploratory PDAC-versus-normal and CP-versus-normal contrasts, plus an all-group PDAC-versus-CP sensitivity result; its independence assumption cannot be verified without pairing metadata. BH correction was applied across all analyzed genes separately for each contrast. FDR < 0.05 and absolute log2 difference >= 0.5 defined the operational CP-comparator candidate rule. No set subtraction based on non-significance was used, and inflammation-free or malignancy-specific expression was not inferred.
+
+### Spatial Tissue States
+
+Deposited normalized expression was transformed as log2(expression + 1). ROIs were averaged within each inferred patient profile and tissue state, producing 22 observed profile/state means. We fitted expression ~ profile + tissue state with a fixed profile block. The state omnibus test and Normal-to-ADM, ADM-to-PDAC, and Normal-to-PDAC contrasts were corrected separately across all 1,825 measured targets. Contrast CIs are pointwise 95% intervals, not multiplicity-adjusted intervals.
+
+The analysis was repeated in the six profiles containing all states and after leaving each profile out. A ROI-level random-intercept nlme model was fitted for the historical 80-gene family as a sensitivity analysis, with BH correction across that 80-gene family. Its results are not numerically comparable to all-panel FDR counts because both weighting and the tested family differ. Tissue-state labels describe cross-sectional regions, not observed longitudinal progression.
+
+### EV miRNA Ranking
+
+GSE304572 count columns were mapped exactly to the deposited participant labels. Counts were normalized to miRNA library totals and transformed as log2(CPM + 1). miRNAs required at least 1 CPM in at least ten samples. PDAC was compared with pooled CP/IPMN using a two-sided Wilcoxon test with exact = FALSE, followed by BH correction across detectable miRNAs. A count-aware limma-voom model using the same features and library sizes was included as sensitivity evidence. No TMM normalization or raw-read reprocessing was performed.
+
+The top 20 eligible measured plasma miRNAs were ranked using EV BH FDR and then absolute median difference. This creates an exploratory candidate pool despite the absence of significant EV hits. It is not a validated EV signature and does not directly link a tissue gene to a plasma miRNA.
+
+### Diagnostic Training and PLCO Evaluation
+
+Both GSE259327 workbooks were transformed as log2(raw count / deposited Total Counts * 1,000,000 + 1). Sample titles were matched to GEO labels; all 299 participants and the 2,102 shared assay features were reconciled. Four unpenalized logistic models were assessed: the historical six-miRNA panel, a refit of the published three-marker set (let-7i-5p, miR-130a-3p, miR-221-3p), EV-ranked selection, and unrestricted measured plasma-miRNA selection.
+
+The fixed panels received stratified ten-fold CV with seed 20261001. The two selection pipelines used stratified ten-fold outer CV with seed 20261002 and five-fold inner CV to choose 3, 6, or 9 features. Feature ranking by Wilcoxon P was repeated within every training fold. The unrestricted pipeline also repeated detection filtering within training folds: at least 1 CPM in max(5, ceiling(10% of training samples)). The external EV pool was formed from a separate cohort. Final feature counts were chosen by inner CV on the full diagnostic cohort with seed 20261025. All fits were required to converge with finite coefficients.
+
+Final models were fitted on all diagnostic samples and applied to PLCO without using PLCO outcomes for feature selection, coefficient fitting, threshold tuning, direction reversal, or outcome-driven batch correction. ROC direction was fixed so larger scores indicate PDAC. PLCO AUCs received DeLong 95% CIs, and model comparisons used paired DeLong tests with BH correction across six comparisons. Ten-fold out-of-fold AUC intervals are conditional DeLong intervals; they do not capture full pipeline/split uncertainty. The historical six-panel CV also excludes its earlier selection process.
+
+Youden thresholds were chosen from apparent diagnostic ROC curves and retained in PLCO. Sensitivity/specificity CIs used exact binomial intervals. Brier score and logistic calibration intercept/slope were estimated in the balanced PLCO sample; probabilities were clipped to 1e-6 to 1 - 1e-6 only for calibration logits. These measures are sample-specific and do not establish population screening-risk calibration.
+
+### Secondary Cohort and Enrichment
+
+GSE268771 deposited RPM values were transformed as log2(RPM + 1). PDAC was compared with all controls and with benign controls using separate Wilcoxon tests with BH correction over 1,175 miRNAs. Constant features received P = 1. Marker availability and fixed-direction univariate AUCs were descriptive; diagnostic plasma model coefficients were not transferred to this different EV assay.
+
+GO Biological Process enrichment used the spatial-associated genes measurable in both tissue datasets. The background was restricted to jointly measurable genes with GO BP annotation, rather than the whole genome. GOALL propagated annotations were used; terms with 10-500 background genes were tested by an upper-tail hypergeometric test and BH correction. The exact universe is deposited. This is supplementary context for a cancer-focused panel, without a claim of CP-specific pathway enrichment.
+
+## Results
+
+### Bulk Adjustment and Tissue Comparison
+
+The updated platform mapping retained 23207 unique genes. The unadjusted PDAC-versus-CP analysis yielded 2385 genes at FDR < 0.05 and 1568 after the absolute log2 difference >= 0.5 rule. After age/sex adjustment in the 17-specimen primary model, 0 genes passed FDR < 0.05; the exploratory all-group adjusted model yielded 0. The adjusted CP-aware spatial overlap contains 0 genes. Unadjusted overlap counts are explicitly exploratory and cannot support the previous validated malignant-switch claim.
+
+Bulk age distributions:
+
+| Group | Age.N | Age.Median | Age.Min | Age.Max |
+| --- | --- | --- | --- | --- |
+| Adjacent Normal |  9 | 50 | 32 | 67 |
+| Chronic Pancreatitis |  6 | 21 | 19 | 39 |
+| Tumor | 11 | 45 | 21 | 57 |
+
+Tissue analysis flow:
+
+| Metric | Count |
+| --- | --- |
+| GSE143754 annotated genes | 23207 |
+| Age-sex-adjusted CP-aware genes |     0 |
+| Age-sex-adjusted CP-aware genes on GeoMx panel |     0 |
+| Age-sex-adjusted CP-aware spatial overlap |     0 |
+| Jointly measurable spatial-associated genes |   489 |
+| Spatial overlap: Normal-to-ADM associated |    52 |
+| Spatial overlap: ADM-to-PDAC associated |   167 |
+| Spatial overlap: both contrasts |    14 |
+| Unadjusted CP-aware genes |  1568 |
+| Unadjusted CP-aware spatial overlap |    48 |
+
+### Patient-Profile-Aware Spatial Associations
+
+The primary all-panel test identified 506 of 1825 targets at omnibus FDR < 0.05. Restricting to the six complete profiles yielded 315 targets. In the historical 80-gene set, 31 passed the primary all-target FDR and 61 passed the ROI random-intercept sensitivity FDR over 80 tests. These analyses support state associations while showing dependence on analysis scale and multiplicity.
+
+STAT1 increased from Normal to ADM by 0.540 log2 units (95% CI 0.260 to 0.820; all-target contrast FDR 0.0482). Its ADM-to-PDAC difference was -0.195 (95% CI -0.461 to 0.070; FDR 0.3923), which does not establish a subsequent decline. The omnibus FDR was 0.0200; the complete-profile omnibus FDR was 0.0464. Leaving one profile out preserved the positive early-effect direction in all eight fits (effect range 0.460-0.625), but the omnibus FDR ranged from 0.0194 to 0.0708. STAT1 is therefore an early-associated example with finite-sample uncertainty, not a proven transient peak.
+
+### EV Discovery
+
+Of 2,369 measured miRNAs, 440 met the detection filter; 0 passed Wilcoxon BH FDR < 0.05 and 0 passed voom BH FDR < 0.05. There were 363 detectable features measured in both plasma workbooks, from which the exploratory 20-feature EV ranking was formed. Negative results under this filter do not invalidate source-paper analyses of rare miRNAs or radiomics-derived signatures.
+
+### Plasma Model Transportability
+
+| Model | Apparent_AUC | Diagnostic_CV_AUC | PLCO_AUC_95CI | PLCO_Brier |
+| --- | --- | --- | --- | --- |
+| Historical six | 0.934 | 0.916 | 0.575 (0.459-0.690) | 0.476 |
+| Published three refit | 0.955 | 0.948 | 0.460 (0.343-0.576) | 0.490 |
+| EV ranked nested | 0.952 | 0.931 | 0.549 (0.433-0.666) | 0.495 |
+| Unrestricted nested | 0.961 | 0.939 | 0.455 (0.338-0.572) | 0.498 |
+
+Diagnostic CV performance remained high, while every PLCO AUC CI included 0.5. All PLCO samples were below their model's diagnostic Youden threshold, producing zero sensitivity and unit specificity. This accompanies a large cohort-associated score shift; the files cannot separate lead-time biology from preanalytical or normalization differences.
+
+| Model | Training_Threshold | PLCO_Sensitivity_95CI | PLCO_Specificity_95CI | Calibration_Intercept | Calibration_Slope |
+| --- | --- | --- | --- | --- | --- |
+| Historical six | 0.690 | 0.000 (0.000-0.074) | 1.000 (0.926-1.000) | 1.046 | 0.215 |
+| Published three refit | 0.517 | 0.000 (0.000-0.074) | 1.000 (0.926-1.000) | -0.300 | -0.050 |
+| EV ranked nested | 0.608 | 0.000 (0.000-0.074) | 1.000 (0.926-1.000) | 1.289 | 0.223 |
+| Unrestricted nested | 0.493 | 0.000 (0.000-0.074) | 1.000 (0.926-1.000) | -0.375 | -0.036 |
+
+No pairwise PLCO AUC comparison survived BH correction (minimum adjusted P = 0.437). The EV-ranked strategy did not establish improvement over unrestricted selection or the refitted published marker set. The historical-six versus published-three-refit unadjusted paired DeLong P was 0.0986. The full comparison table and model coefficients are deposited.
+
+The source paper's published lead-time-specific AUC must not be compared as if it were obtained with these refitted coefficients, this normalization, and all 96 PLCO samples. Original score reconstruction and near-diagnosis subsets cannot be recovered from the current deposited clinical metadata. PLCO has now been examined, so future model redesign would require a fresh independent test set.
+
+### Secondary EV Cohort and Panel-Aware Enrichment
+
+GSE268771 contained eight of the nine historical/published miRNA markers, with 236 miRNAs passing PDAC-versus-benign FDR < 0.05. Forty-five of 51 PDAC participants were stage III/IV, and 32 were marked as receiving palliative treatment. These results are descriptive evidence in an advanced-disease cohort.
+
+GO BP enrichment tested 2774 terms with an annotated jointly measurable background of 1736 genes and 484 selected spatial-associated genes. 30 terms passed BH FDR < 0.05. The result concerns tissue-state association within the measurable panel and is not CP-specific enrichment.
+
+## Interpretation
+
+The strongest retained observation is cross-sectional spatial tissue-state association after accounting for repeated ROIs. The current data do not establish a confounder-robust CP-specific gene set or a transferable prediagnostic miRNA panel. A credible manuscript should report the adjustment sensitivity and negative external evaluation directly, with historical network/database findings moved to supporting material. Publication readiness still depends on confirming spatial identities, resolving source-score/preprocessing differences, and establishing a focused contribution beyond the primary studies.
+
+Detailed claim changes and remaining constraints are in [reanalysis_claims_and_limitations.md](reanalysis_claims_and_limitations.md). Original dataset publications and accession links are in [the reanalysis guide](../reanalysis/README.md). All source studies must be cited in the manuscript.
+
+## Figures and Captions
+
+Each listed figure has a same-stem PNG and PDF under reanalysis/figures.
+
+| Figure | Caption |
+| --- | --- |
+| spatial/STAT1_patient_stage | Mean log2 normalized STAT1 expression within inferred profile/state; lines join available states within profiles. |
+| bulk/PDAC_vs_CP_volcano | Age/sex-adjusted limma PDAC-versus-CP contrast; the dashed line is BH FDR = 0.05. |
+| integrated_tissue/spatial_tissue_state_heatmap | Top 20 jointly measurable spatial-associated genes, ranked by all-panel omnibus FDR; colors are within-gene z-scores of profile/state means. |
+| ev/EV_differential | Detectable EV miRNAs under the stated filter; Wilcoxon median differences and BH FDR. |
+| plasma/PLCO_ROC_models | Fixed-direction ROC curves for diagnostic-fitted models on all 96 deposited PLCO participants. |
+| plasma/score_distributions | Fitted model score distributions across diagnostic and PLCO cohorts, stratified by deposited outcome. |
+| secondary_ev/cohort_composition | Actual comparator and stage counts in GSE268771. |
+| qc/plasma_total_counts | Deposited plasma total-count distributions by cohort and outcome. |
+| qc/PLCO_calibration | Six equal-size score-rank bins per model in the balanced PLCO sample; exact binomial CIs for observed case fractions. |
+| qc/bulk_demographics | Deposited participant ages by tissue group and sex. |
+
+## Reproducibility
+
+The scripts, seed values, input MD5 hashes, package versions, sessionInfo, model coefficients, per-sample scores, fold selections, and PNG/PDF pairs are deposited. See scripts/reanalysis/README.md for execution. This workflow uses processed public data; it is not a reproduction of each primary study's raw-data processing. Output checks confirm structural/numerical validity, not biological truth or external validation of the workflow itself.

@@ -1,17 +1,28 @@
 # Integrated PDAC Biomarker Analysis
 
-This repository contains the cleaned effective scripts, processed public input files, derived tables, networks, and manuscript-ready figures for an integrated pancreatic ductal adenocarcinoma (PDAC) biomarker analysis.
+This repository contains a public-data reanalysis of pancreatic ductal adenocarcinoma (PDAC) tissue and circulating miRNA studies, alongside the recovered historical project.
 
-The project combines bulk tissue transcriptomics, GeoMx spatial transcriptomics, protein-protein interaction analysis, extracellular-vesicle miRNA discovery, plasma miRNA model development, secondary cross-study assessment, and curated miRNA-hub-gene evidence.
+**Use the corrected analysis under [reanalysis/](reanalysis/README.md).**
+The original scripts and `results/` are preserved for traceability and should
+not be used as current evidence for the original manuscript claims.
 
-## Analysis Overview
+The reanalysis accounts for repeated spatial ROIs, uses age/sex-adjusted
+bulk tissue contrasts, nests plasma feature selection within cross-validation,
+and evaluates diagnostic models on the same-assay prediagnostic PLCO cohort.
+Every new scientific figure is supplied as both PNG and PDF.
 
-1. Bulk tissue discovery in `GSE143754` identified PDAC, chronic pancreatitis, and normal pancreas differential-expression patterns.
-2. A CP-aware malignant-switch filter retained genes altered in PDAC versus CP while excluding CP-versus-normal inflammatory changes.
-3. Spatial validation in `GSE208536` tested malignant-switch genes across Normal, ADM, and PDAC GeoMx regions.
-4. STRING/Cytoscape prioritization intersected stage-associated genes with PPI hub genes.
-5. EV/plasma miRNA analyses used `GSE304572`, `GSE259327`, and `GSE268771` to assess candidate miRNAs and model transferability.
-6. Curated multiMiR evidence summarized miR-107 and miR-20a-5p associations with the 12 shared hub genes.
+## Current Findings
+
+Spatial tissue-state associations remain, but patient identity is inferred from
+deposited clinical profiles and requires confirmation. No bulk PDAC-versus-CP
+gene passes FDR < 0.05 after age/sex adjustment in this small cohort. Diagnostic
+plasma performance does not transfer convincingly to the full deposited PLCO
+sample under the fitted models. These results support an exploratory
+reproducibility and transportability study; they do not establish a clinically
+validated biomarker panel.
+
+See [methods and results](docs/reanalysis_methods_results.md) and
+[claims and limitations](docs/reanalysis_claims_and_limitations.md).
 
 ## Repository Layout
 
@@ -21,6 +32,13 @@ scripts/
   02_spatial_stage_ppi_hub_analysis.R
   03_ev_mirna_model_transferability.R
   04_curated_multimir_hub_evidence.R
+  reanalysis/
+    Executable corrected workflow, dependency setup, and output validation.
+
+reanalysis/
+  results/       Corrected primary and sensitivity tables.
+  figures/       New PNG/PDF scientific figure pairs.
+  provenance/    Session information, checksums, and output checks.
 
 data/source/
   Processed/public GEO source matrices and metadata used by the recovered scripts.
@@ -47,7 +65,7 @@ Raw GEO archives, `.CEL.gz` files, `.RData` workspaces, RStudio metadata, nested
 
 The included scripts were recovered from the working project and RStudio source history, then path-normalized from the original local `D:/R_proj/Proj_Panc` layout. They are preserved as effective research scripts rather than refactored into a package. Some sections still require public GEO downloads and installed Bioconductor/R packages to rerun fully.
 
-## Key Outputs
+## Historical Outputs
 
 - `results/tables/discovery/Malignant_Switch_628_Genes.csv`
 - `results/tables/spatial/Corrected_80_Gene_Spatial_Progression_Statistics.csv`
@@ -60,3 +78,7 @@ The included scripts were recovered from the working project and RStudio source 
 ## Data Availability
 
 All source datasets are public Gene Expression Omnibus datasets: `GSE143754`, `GSE208536`, `GSE304572`, `GSE259327`, and `GSE268771`.
+Source studies and public metadata limitations are documented in
+[the corrected analysis guide](reanalysis/README.md). Package versions are
+recorded in `renv.lock`; run instructions are in
+[scripts/reanalysis/README.md](scripts/reanalysis/README.md).

@@ -1,0 +1,11 @@
+"Metric","Count"
+"GSE143754 annotated genes",23207
+"Age-sex-adjusted CP-aware genes",0
+"Age-sex-adjusted CP-aware genes on GeoMx panel",0
+"Age-sex-adjusted CP-aware spatial overlap",0
+"Jointly measurable spatial-associated genes",489
+"Spatial overlap: Normal-to-ADM associated",52
+"Spatial overlap: ADM-to-PDAC associated",167
+"Spatial overlap: both contrasts",14
+"Unadjusted CP-aware genes",1568
+"Unadjusted CP-aware spatial overlap",48

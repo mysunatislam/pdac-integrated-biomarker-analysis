@@ -1,0 +1,9 @@
+"Clinical_Profile","Normal","ADM","PDAC"
+"patient age: 66 | patient sex: F | tumor grade: G2 | tumor stage: PT2N0",2,2,2
+"patient age: 66 | patient sex: M | tumor grade: G3 | tumor stage: PT2N",3,2,2
+"patient age: 67 | patient sex: F | tumor grade: G1 | tumor stage: pT1cN0",2,1,2
+"patient age: 67 | patient sex: M | tumor grade: G2 | tumor stage: pT3N1",2,2,2
+"patient age: 80 | patient sex: M | tumor grade: G2 | tumor stage: pT3N1",3,1,2
+"patient age: 83 | patient sex: F | tumor grade: G1-G3 | tumor stage: pT3N1",2,6,2
+"patient age: 83 | patient sex: M | tumor grade: G2 | tumor stage: pT2N1",2,0,2
+"patient age: 86 | patient sex: M | tumor grade: G2 | tumor stage: pT2N0",0,2,2
