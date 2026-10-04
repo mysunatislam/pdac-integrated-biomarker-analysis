@@ -6,14 +6,16 @@ out_dir <- "reanalysis/provenance"
 dir.create(out_dir, recursive = TRUE, showWarnings = FALSE)
 dependencies <- c("readxl", "ggplot2", "pROC", "nlme", "scales", "limma",
                    "statmod", "AnnotationDbi", "hta20transcriptcluster.db", "org.Hs.eg.db",
-                   "GO.db", "renv", "BiocManager")
+                   "GO.db", "renv", "BiocManager", "edgeR", "hgu133plus2.db", "glmnet")
 stopifnot(all(vapply(dependencies, requireNamespace, logical(1), quietly = TRUE)))
 session_lines <- sub("[[:space:]]+$", "", capture.output(sessionInfo()))
 writeLines(session_lines, file.path(out_dir, "sessionInfo.txt"))
 versions <- data.frame(Package = dependencies, Version = vapply(dependencies,
                          function(p) as.character(packageVersion(p)), character(1)))
 write.csv(versions, file.path(out_dir, "package_versions.csv"), row.names = FALSE)
-inputs <- c(list.files("data/source", full.names = TRUE),
+external_files <- if (dir.exists("data/external")) list.files("data/external", full.names = TRUE) else character()
+external_files <- external_files[!grepl("family.soft.gz$|\\.part$", external_files)]
+inputs <- c(list.files("data/source", full.names = TRUE), external_files,
              "results/tables/spatial/valid_genes.txt")
 hashes <- tools::md5sum(inputs)
 write.csv(data.frame(File = names(hashes), MD5 = unname(hashes)),

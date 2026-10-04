@@ -5,4 +5,4 @@ Adjusted CP-aware spatial overlap: 0
 Jointly measurable spatial-associated genes: 489
 Plasma models: 4
 PLCO samples: 96
-PNG/PDF figure pairs: 10
+PNG/PDF figure pairs: 14

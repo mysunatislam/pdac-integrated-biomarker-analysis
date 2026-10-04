@@ -16,3 +16,7 @@ desktop.ini
 renv/library/
 renv/staging/
 tmp/figure_qa/
+data/external/*.part
+data/external/GPL18941_family.soft.gz
+data/external/GPL22763_family.soft.gz
+data/external/GSE91035_normalized_data_with_gene_symbol.txt.gz

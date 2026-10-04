@@ -1,0 +1,6 @@
+"Dataset","Comparison","Cases","Controls","Paired_Donors","Genes_Tested","All_Gene_BH_Significant","Role"
+"GSE15471","PDAC_vs_paired_Normal",35,35,35,20823,15541,"Paired tumor/adjacent-normal association"
+"GSE91035","PDAC_vs_CP",25,2,NA,19100,46,"Exploratory: only two CP controls, no clinical adjustment"
+"GSE91035","PDAC_vs_normal",25,8,NA,19100,8877,"Exploratory: commercially sourced normal RNA"
+"GSE91035","PDAC_vs_benign",25,15,NA,19100,4597,"Exploratory: adjacent benign tissue, pairing unavailable"
+"GSE179248","Culture_D6_vs_D0",14,14,14,16466,10519,"Paired human culture response, not in-vivo progression"

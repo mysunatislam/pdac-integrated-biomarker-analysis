@@ -8,6 +8,11 @@ It is generated from the final tables, so reported counts agree with the
 deposited outputs. [Claims and limitations](../docs/reanalysis_claims_and_limitations.md)
 explains how the manuscript must change.
 
+The [additional-cohort report](../docs/external_validation_methods_results.md)
+documents paired human tissue/culture checks and independent serum analyses.
+Its frozen families and cohort exclusions are specified in
+[the dated protocol](../docs/external_validation_protocol.md).
+
 ## Reproduce
 
 Use the instructions in [scripts/reanalysis/README.md](../scripts/reanalysis/README.md).
@@ -29,6 +34,8 @@ on a second operating system.
 | Secondary EV cohort | Separate descriptive analysis because assay, analyte, stage mix, and treatment differ |
 | GO enrichment | Supplementary; background restricted to jointly measurable, GO-annotated genes |
 | PPI and multiMiR | Historical supporting material, without a new causal or clinical claim |
+| Additional tissue/culture | Paired-donor associations and directional compatibility, not proof of in-vivo progression |
+| Additional serum | Fixed marker associations and exploratory nested-CV CA19-9 increment; no compelling panel increment |
 
 The spatial labels are tissue states sampled at one time, not longitudinal
 stages of an observed patient's cancer development. The bulk comparison uses

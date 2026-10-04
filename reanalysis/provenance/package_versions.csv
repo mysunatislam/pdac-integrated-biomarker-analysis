@@ -12,3 +12,6 @@
 "GO.db","3.23.1"
 "renv","1.3.0"
 "BiocManager","1.30.27"
+"edgeR","4.10.5"
+"hgu133plus2.db","3.13.0"
+"glmnet","5.1"

@@ -1,0 +1,6 @@
+"Dataset","Comparison","Measurable_Frozen","External_BH_All_Significant","External_BH_Family_Significant","Same_Direction","Spatial_Contrast_Significant","Spatial_Significant_Same_Direction","Dual_AllGene_Significant_SameDirection","Spearman_Effect_Correlation"
+"GSE15471","PDAC_vs_paired_Normal",499,355,350,345,488,340,272,0.812354830142212
+"GSE179248","Culture_D6_vs_D0",484,351,353,357,53,43,35,0.685095125729167
+"GSE91035","PDAC_vs_CP",469,0,0,280,459,275,0,0.335693522101906
+"GSE91035","PDAC_vs_benign",469,170,196,379,459,373,160,0.821519826632561
+"GSE91035","PDAC_vs_normal",469,294,307,382,459,374,268,0.835348159832123

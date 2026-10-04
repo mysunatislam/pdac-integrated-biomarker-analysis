@@ -1,0 +1,6 @@
+External output checks: PASS
+35 paired tissue donors; 14 paired culture donors
+CP n=2 kept exploratory; perfect-confounding cohort not fit
+27 locked serum markers; ROC direction fixed to diagnostic plasma
+115 serum CV participants; three models, shared outer folds, 30 inner lambda selections
+BH, CIs, cohort sizes, subgroup labels, input hashes and script parsing checked

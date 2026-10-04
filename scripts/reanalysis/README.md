@@ -37,6 +37,23 @@ run the analyses. All input files are already under `data/source/`.
 | 10 | Structural and numerical output checks |
 | 11 | Methods/results report generated from the final tables |
 
+## Additional Cohorts
+
+After the original analysis, run:
+
+```r
+source("scripts/reanalysis/run_external.R")
+```
+
+This runs steps 12-17 without refitting or tuning the original PLCO models.
+It downloads missing public inputs/caches, audits sample groups and chip effects,
+fits paired tissue and culture models, tests fixed serum marker families and
+nested-CV CA19-9 increments, generates four new PNG/PDF figure pairs and an
+external-cohort report, and validates the saved tables. Large SOFT family archives
+and the duplicated GSE91035 annotated expression supplement are download caches,
+not committed data. Compact platform tables and all effective matrices are kept.
+Source URLs/hashes are in `reanalysis/results/external/download_manifest.csv`.
+
 To regenerate plasma figures from saved scores without refitting models:
 
 ```powershell

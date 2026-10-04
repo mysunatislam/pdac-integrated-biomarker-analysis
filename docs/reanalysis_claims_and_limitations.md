@@ -73,6 +73,16 @@ combination. Failure to pass FDR is not proof of no biological effect.
 
 ## Manuscript Direction
 
+The [independent-cohort extension](external_validation_methods_results.md) adds
+35 matched tumor/normal donor pairs, 14 paired human culture donors, exploratory
+bulk contrasts, and two serum studies. STAT1 increases recur in paired tumor
+and culture data. This strengthens tissue-state association evidence without
+establishing the claimed transient peak or CP specificity. GSE91035 has only
+two CP samples; GSE101462 has perfect disease/chip confounding and was not fitted
+as validation. Fixed serum panels do not materially improve the binary-CA19-9,
+age/sex baseline in the separate GSE85589 nested-CV analysis. These new data do
+not change the locked PLCO results or establish prediagnostic performance.
+
 A defensible working title is **Patient-aware tissue-state associations and
 prediagnostic transportability of plasma miRNA models in public PDAC cohorts**.
 The revised paper should be presented as an exploratory reproducibility study.

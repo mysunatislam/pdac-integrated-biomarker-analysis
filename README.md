@@ -24,6 +24,15 @@ validated biomarker panel.
 See [methods and results](docs/reanalysis_methods_results.md) and
 [claims and limitations](docs/reanalysis_claims_and_limitations.md).
 
+**Additional public cohorts are now analyzed:** paired tumor/normal tissue,
+paired human ADM cultures, and two serum studies. These support parts of the
+spatial tissue-state pattern but do not establish CP-specific or prediagnostic
+biomarkers. Fixed serum miRNA panels do not show a convincing incremental gain
+over binary CA19-9, age and sex. A further tissue cohort was excluded from
+inferential validation because chip and disease are perfectly confounded.
+See [the external-cohort report](docs/external_validation_methods_results.md)
+and [dated specification](docs/external_validation_protocol.md).
+
 ## Repository Layout
 
 ```text
@@ -42,6 +51,9 @@ reanalysis/
 
 data/source/
   Processed/public GEO source matrices and metadata used by the recovered scripts.
+
+data/external/
+  Additional public matrices, paired ADM counts and compact platform annotations.
 
 results/tables/
   Final and supporting CSV/TXT result tables grouped by analysis layer.
@@ -78,6 +90,8 @@ The included scripts were recovered from the working project and RStudio source 
 ## Data Availability
 
 All source datasets are public Gene Expression Omnibus datasets: `GSE143754`, `GSE208536`, `GSE304572`, `GSE259327`, and `GSE268771`.
+The extension uses `GSE15471`, `GSE179248`, `GSE91035`, `GSE59856` and `GSE85589`;
+`GSE101462` is retained for its eligibility audit only.
 Source studies and public metadata limitations are documented in
 [the corrected analysis guide](reanalysis/README.md). Package versions are
 recorded in `renv.lock`; run instructions are in
