@@ -1,0 +1,172 @@
+[
+  {
+    "title": "PDAC expression evidence",
+    "defaults": [
+      {
+        "visualProperty": "NETWORK_BACKGROUND_PAINT",
+        "value": "#FFFFFF"
+      },
+      {
+        "visualProperty": "NODE_WIDTH",
+        "value": 75
+      },
+      {
+        "visualProperty": "NODE_HEIGHT",
+        "value": 30
+      },
+      {
+        "visualProperty": "NODE_SHAPE",
+        "value": "ROUND_RECTANGLE"
+      },
+      {
+        "visualProperty": "NODE_LABEL_FONT_SIZE",
+        "value": 14
+      },
+      {
+        "visualProperty": "NODE_BORDER_WIDTH",
+        "value": 1.2
+      },
+      {
+        "visualProperty": "EDGE_WIDTH",
+        "value": 1
+      },
+      {
+        "visualProperty": "EDGE_STROKE_UNSELECTED_PAINT",
+        "value": "#A3ABB2"
+      },
+      {
+        "visualProperty": "EDGE_TARGET_ARROW_SHAPE",
+        "value": "NONE"
+      },
+      {
+        "visualProperty": "EDGE_SOURCE_ARROW_SHAPE",
+        "value": "NONE"
+      },
+      {
+        "visualProperty": "EDGE_LINE_TYPE",
+        "value": "SOLID"
+      }
+    ],
+    "mappings": [
+      {
+        "mappingType": "passthrough",
+        "mappingColumn": "label",
+        "mappingColumnType": "String",
+        "visualProperty": "NODE_LABEL"
+      },
+      {
+        "mappingType": "discrete",
+        "mappingColumn": "Evidence_class",
+        "mappingColumnType": "String",
+        "visualProperty": "NODE_FILL_COLOR",
+        "map": [
+          {
+            "key": "Broad association support",
+            "value": "#0072B2"
+          },
+          {
+            "key": "Early spatial association",
+            "value": "#E69F00"
+          },
+          {
+            "key": "Other historical candidate",
+            "value": "#D0D4D8"
+          },
+          {
+            "key": "Network context",
+            "value": "#F3F4F5"
+          },
+          {
+            "key": "Cached miRNA query",
+            "value": "#009E73"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "PDAC cached annotation",
+    "defaults": [
+      {
+        "visualProperty": "NETWORK_BACKGROUND_PAINT",
+        "value": "#FFFFFF"
+      },
+      {
+        "visualProperty": "NODE_WIDTH",
+        "value": 75
+      },
+      {
+        "visualProperty": "NODE_HEIGHT",
+        "value": 30
+      },
+      {
+        "visualProperty": "NODE_SHAPE",
+        "value": "ROUND_RECTANGLE"
+      },
+      {
+        "visualProperty": "NODE_LABEL_FONT_SIZE",
+        "value": 14
+      },
+      {
+        "visualProperty": "NODE_BORDER_WIDTH",
+        "value": 1.2
+      },
+      {
+        "visualProperty": "EDGE_WIDTH",
+        "value": 1
+      },
+      {
+        "visualProperty": "EDGE_STROKE_UNSELECTED_PAINT",
+        "value": "#A3ABB2"
+      },
+      {
+        "visualProperty": "EDGE_TARGET_ARROW_SHAPE",
+        "value": "NONE"
+      },
+      {
+        "visualProperty": "EDGE_SOURCE_ARROW_SHAPE",
+        "value": "NONE"
+      },
+      {
+        "visualProperty": "EDGE_LINE_TYPE",
+        "value": "LONG_DASH"
+      }
+    ],
+    "mappings": [
+      {
+        "mappingType": "passthrough",
+        "mappingColumn": "label",
+        "mappingColumnType": "String",
+        "visualProperty": "NODE_LABEL"
+      },
+      {
+        "mappingType": "discrete",
+        "mappingColumn": "Evidence_class",
+        "mappingColumnType": "String",
+        "visualProperty": "NODE_FILL_COLOR",
+        "map": [
+          {
+            "key": "Broad association support",
+            "value": "#0072B2"
+          },
+          {
+            "key": "Early spatial association",
+            "value": "#E69F00"
+          },
+          {
+            "key": "Other historical candidate",
+            "value": "#D0D4D8"
+          },
+          {
+            "key": "Network context",
+            "value": "#F3F4F5"
+          },
+          {
+            "key": "Cached miRNA query",
+            "value": "#009E73"
+          }
+        ]
+      }
+    ]
+  }
+]

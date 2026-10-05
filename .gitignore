@@ -17,6 +17,7 @@ desktop.ini
 renv/library/
 renv/staging/
 tmp/figure_qa/
+tmp/publication_figure_qa/
 data/external/*.part
 data/external/GPL18941_family.soft.gz
 data/external/GPL22763_family.soft.gz

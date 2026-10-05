@@ -1,0 +1,33 @@
+{
+  "historical_candidates": 12,
+  "spatial_omnibus_all_target_significant": 8,
+  "spatial_early_all_target_significant": 1,
+  "spatial_late_all_target_significant": 7,
+  "paired_tumor_all_gene_significant": 12,
+  "culture_all_gene_significant": 10,
+  "chip_CP_all_gene_significant": 11,
+  "omnibus_paired_CP_all_gene_supported": [
+    "TOP2A",
+    "CCNA2",
+    "ITGA2",
+    "ANLN",
+    "MKI67",
+    "ACTB",
+    "CENPF"
+  ],
+  "statistical_refitting": false,
+  "selection_status": "Post hoc reassessment of historical candidates, not untouched discovery or new signature training",
+  "target_pairs_with_records": 22,
+  "supported7_complete_spatial_significant": 7,
+  "supported7_all_spatial_omissions_significant": [
+    "TOP2A",
+    "CCNA2",
+    "ITGA2",
+    "ANLN",
+    "ACTB"
+  ],
+  "target_pairs_with_reporter": 0,
+  "target_pairs_with_protein": 0,
+  "mir107_supported_targets": 12,
+  "mir20a_supported_targets": 10
+}

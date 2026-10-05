@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='510.24pt' height='362.83pt' viewBox='0 0 510.24 362.83'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw1MTAuMjR8MC4wMHwzNjIuODM='>
+    <rect x='0.00' y='0.00' width='510.24' height='362.83' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw1MTAuMjR8MC4wMHwzNjIuODM=)'>
+<rect x='0.00' y='0.000000000000057' width='510.24' height='362.83' style='stroke-width: 0.00; stroke: none;' />
+</g>
+<defs>
+  <clipPath id='cpMy45OXw1MDYuMjV8My45OXwzNTguODU='>
+    <rect x='3.99' y='3.99' width='502.27' height='354.86' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMy45OXw1MDYuMjV8My45OXwzNTguODU=)'>
+<rect x='16.54' y='12.86' width='226.02' height='74.52' style='stroke-width: 0.85; stroke: #A3ABB2; stroke-linecap: butt; stroke-linejoin: miter; fill: #EAF3F8;' />
+<rect x='267.67' y='12.86' width='226.02' height='74.52' style='stroke-width: 0.85; stroke: #A3ABB2; stroke-linecap: butt; stroke-linejoin: miter; fill: #EAF6F1;' />
+<rect x='16.54' y='121.09' width='226.02' height='74.52' style='stroke-width: 0.85; stroke: #A3ABB2; stroke-linecap: butt; stroke-linejoin: miter; fill: #EAF3F8;' />
+<rect x='267.67' y='121.09' width='226.02' height='74.52' style='stroke-width: 0.85; stroke: #A3ABB2; stroke-linecap: butt; stroke-linejoin: miter; fill: #EAF6F1;' />
+<rect x='16.54' y='229.32' width='226.02' height='74.52' style='stroke-width: 0.85; stroke: #A3ABB2; stroke-linecap: butt; stroke-linejoin: miter; fill: #EAF3F8;' />
+<rect x='267.67' y='229.32' width='226.02' height='74.52' style='stroke-width: 0.85; stroke: #A3ABB2; stroke-linecap: butt; stroke-linejoin: miter; fill: #EAF6F1;' />
+<text x='129.55' y='31.88' text-anchor='middle' style='font-size: 9.53px; font-weight: bold; font-family: "Arial";' textLength='82.44px' lengthAdjust='spacingAndGlyphs'>Tissue candidates</text>
+<text x='380.68' y='31.88' text-anchor='middle' style='font-size: 9.53px; font-weight: bold; font-family: "Arial";' textLength='89.48px' lengthAdjust='spacingAndGlyphs'>Circulating miRNAs</text>
+<text x='129.55' y='140.12' text-anchor='middle' style='font-size: 9.53px; font-weight: bold; font-family: "Arial";' textLength='105.38px' lengthAdjust='spacingAndGlyphs'>Corrected associations</text>
+<text x='380.68' y='140.12' text-anchor='middle' style='font-size: 9.53px; font-weight: bold; font-family: "Arial";' textLength='96.36px' lengthAdjust='spacingAndGlyphs'>Prediction evaluation</text>
+<text x='129.55' y='248.35' text-anchor='middle' style='font-size: 9.53px; font-weight: bold; font-family: "Arial";' textLength='89.52px' lengthAdjust='spacingAndGlyphs'>Robustness checks</text>
+<text x='380.68' y='248.35' text-anchor='middle' style='font-size: 9.53px; font-weight: bold; font-family: "Arial";' textLength='92.66px' lengthAdjust='spacingAndGlyphs'>Clinical benchmarks</text>
+<text x='129.55' y='51.77' text-anchor='middle' style='font-size: 8.68px; font-family: "Arial";' textLength='97.92px' lengthAdjust='spacingAndGlyphs'>Historical 12-gene subset</text>
+<text x='129.55' y='65.31' text-anchor='middle' style='font-size: 8.68px; font-family: "Arial";' textLength='95.00px' lengthAdjust='spacingAndGlyphs'>Saved STRING topology</text>
+<text x='380.68' y='51.77' text-anchor='middle' style='font-size: 8.68px; font-family: "Arial";' textLength='115.25px' lengthAdjust='spacingAndGlyphs'>Historical six / published three</text>
+<text x='380.68' y='65.31' text-anchor='middle' style='font-size: 8.68px; font-family: "Arial";' textLength='102.25px' lengthAdjust='spacingAndGlyphs'>Exploratory EV candidates</text>
+<text x='129.55' y='153.24' text-anchor='middle' style='font-size: 8.68px; font-family: "Arial";' textLength='98.36px' lengthAdjust='spacingAndGlyphs'>Spatial: 8 inferred profiles</text>
+<text x='129.55' y='166.78' text-anchor='middle' style='font-size: 8.68px; font-family: "Arial";' textLength='93.58px' lengthAdjust='spacingAndGlyphs'>Paired tissue: 35 donors</text>
+<text x='129.55' y='180.32' text-anchor='middle' style='font-size: 8.68px; font-family: "Arial";' textLength='91.14px' lengthAdjust='spacingAndGlyphs'>ADM culture: 14 donors</text>
+<text x='380.68' y='160.01' text-anchor='middle' style='font-size: 8.68px; font-family: "Arial";' textLength='135.98px' lengthAdjust='spacingAndGlyphs'>Diagnostic: 121 PDAC / 82 controls</text>
+<text x='380.68' y='173.55' text-anchor='middle' style='font-size: 8.68px; font-family: "Arial";' textLength='143.27px' lengthAdjust='spacingAndGlyphs'>Locked PLCO: 48 cases / 48 controls</text>
+<text x='129.55' y='268.24' text-anchor='middle' style='font-size: 8.68px; font-family: "Arial";' textLength='123.42px' lengthAdjust='spacingAndGlyphs'>PDAC / CP: 195 / 59 specimens</text>
+<text x='129.55' y='281.78' text-anchor='middle' style='font-size: 8.68px; font-family: "Arial";' textLength='126.36px' lengthAdjust='spacingAndGlyphs'>Broad FDR and omission checks</text>
+<text x='380.68' y='268.24' text-anchor='middle' style='font-size: 8.68px; font-family: "Arial";' textLength='104.14px' lengthAdjust='spacingAndGlyphs'>Serum: 88 PC / 27 controls</text>
+<text x='380.68' y='281.78' text-anchor='middle' style='font-size: 8.68px; font-family: "Arial";' textLength='108.53px' lengthAdjust='spacingAndGlyphs'>Binary CA19-9, age and sex</text>
+<line x1='129.55' y1='89.15' x2='129.55' y2='118.25' style='stroke-width: 0.85; stroke-linecap: butt;' />
+<polyline points='127.00,113.83 129.55,118.25 132.10,113.83 ' style='stroke-width: 0.85; stroke-linecap: butt;' />
+<line x1='380.68' y1='89.15' x2='380.68' y2='118.25' style='stroke-width: 0.85; stroke-linecap: butt;' />
+<polyline points='378.13,113.83 380.68,118.25 383.24,113.83 ' style='stroke-width: 0.85; stroke-linecap: butt;' />
+<line x1='129.55' y1='197.39' x2='129.55' y2='226.49' style='stroke-width: 0.85; stroke-linecap: butt;' />
+<polyline points='127.00,222.07 129.55,226.49 132.10,222.07 ' style='stroke-width: 0.85; stroke-linecap: butt;' />
+<line x1='380.68' y1='197.39' x2='380.68' y2='226.49' style='stroke-width: 0.85; stroke-linecap: butt;' />
+<polyline points='378.13,222.07 380.68,226.49 383.24,222.07 ' style='stroke-width: 0.85; stroke-linecap: butt;' />
+<text x='255.12' y='339.80' text-anchor='middle' style='font-size: 9.25px; font-weight: bold; font-family: "Arial";' textLength='279.16px' lengthAdjust='spacingAndGlyphs'>Joint interpretation: association support and clinical limitations</text>
+</g>
+<g clip-path='url(#cpMC4wMHw1MTAuMjR8MC4wMHwzNjIuODM=)'>
+</g>
+</g>
+</svg>

@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<graph id="87" label="string_interactions_short (3).tsv" cy:view="0" cy:registered="0" cy:documentVersion="3.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cy="http://www.cytoscape.org" xmlns="http://www.cs.rpi.edu/XGMML">
+  <att>
+    <graph id="128" label="128" cy:registered="0">
+    </graph>
+  </att>
+  <att>
+    <graph id="155" label="string_interactions_short (3).tsv" cy:registered="1">
+      <node id="662" label="SERPINB5"/>
+      <node id="615" label="KRT19"/>
+      <node id="604" label="LAMA3"/>
+      <node id="596" label="LAMC2"/>
+      <node id="588" label="STAT6"/>
+      <node id="583" label="IL13RA1"/>
+      <node id="578" label="IFNGR2"/>
+      <node id="570" label="NF1"/>
+      <node id="565" label="MSH2"/>
+      <node id="554" label="TBK1"/>
+      <node id="546" label="RICTOR"/>
+      <node id="523" label="LDHA"/>
+      <node id="518" label="GPI"/>
+      <node id="513" label="IDH1"/>
+      <node id="508" label="PKM"/>
+      <node id="491" label="LGALS3"/>
+      <node id="489" label="CD68"/>
+      <node id="484" label="CD47"/>
+      <node id="479" label="CD55"/>
+      <node id="474" label="CD9"/>
+      <node id="472" label="CD46"/>
+      <node id="458" label="SFN"/>
+      <node id="438" label="TFDP1"/>
+      <node id="424" label="SP1"/>
+      <node id="413" label="ROCK1"/>
+      <node id="408" label="PRKCD"/>
+      <node id="403" label="PARP4"/>
+      <node id="395" label="HMGB1"/>
+      <node id="387" label="PRKDC"/>
+      <node id="382" label="PSEN1"/>
+      <node id="377" label="MET"/>
+      <node id="369" label="TNFRSF10B"/>
+      <node id="364" label="MDM2"/>
+      <node id="356" label="HLA-B"/>
+      <node id="348" label="PCNA"/>
+      <node id="343" label="STAT1"/>
+      <node id="338" label="TTR"/>
+      <node id="318" label="FOXM1"/>
+      <node id="310" label="TOP2A"/>
+      <node id="305" label="CENPF"/>
+      <node id="300" label="CCNA2"/>
+      <node id="295" label="MKI67"/>
+      <node id="287" label="AURKA"/>
+      <node id="285" label="ANLN"/>
+      <node id="280" label="AMBP"/>
+      <node id="275" label="ENO1"/>
+      <node id="270" label="B2M"/>
+      <node id="265" label="TFRC"/>
+      <node id="260" label="RAC1"/>
+      <node id="255" label="TUBB"/>
+      <node id="250" label="GSK3B"/>
+      <node id="245" label="CASP3"/>
+      <node id="240" label="ITGA2"/>
+      <node id="235" label="CCNB1"/>
+      <node id="185" label="ITGB4"/>
+      <node id="183" label="ACTB"/>
+      <edge id="664" label="SERPINB5 (interacts with) SFN" source="662" target="458" cy:directed="1"/>
+      <edge id="617" label="KRT19 (interacts with) LGALS3" source="615" target="491" cy:directed="1"/>
+      <edge id="620" label="LAMA3 (interacts with) LAMC2" source="604" target="596" cy:directed="1"/>
+      <edge id="673" label="STAT6 (interacts with) TBK1" source="588" target="554" cy:directed="1"/>
+      <edge id="590" label="IL13RA1 (interacts with) STAT6" source="583" target="588" cy:directed="1"/>
+      <edge id="585" label="IFNGR2 (interacts with) IL13RA1" source="578" target="583" cy:directed="1"/>
+      <edge id="580" label="IFNGR2 (interacts with) STAT1" source="578" target="343" cy:directed="1"/>
+      <edge id="647" label="MSH2 (interacts with) PCNA" source="565" target="348" cy:directed="1"/>
+      <edge id="644" label="MSH2 (interacts with) PRKDC" source="565" target="387" cy:directed="1"/>
+      <edge id="641" label="MSH2 (interacts with) NF1" source="565" target="570" cy:directed="1"/>
+      <edge id="623" label="LDHA (interacts with) PKM" source="523" target="508" cy:directed="1"/>
+      <edge id="540" label="GPI (interacts with) LDHA" source="518" target="523" cy:directed="1"/>
+      <edge id="537" label="GPI (interacts with) IDH1" source="518" target="513" cy:directed="1"/>
+      <edge id="534" label="GPI (interacts with) PKM" source="518" target="508" cy:directed="1"/>
+      <edge id="575" label="IDH1 (interacts with) LDHA" source="513" target="523" cy:directed="1"/>
+      <edge id="572" label="IDH1 (interacts with) NF1" source="513" target="570" cy:directed="1"/>
+      <edge id="493" label="CD68 (interacts with) LGALS3" source="489" target="491" cy:directed="1"/>
+      <edge id="486" label="CD47 (interacts with) CD9" source="484" target="474" cy:directed="1"/>
+      <edge id="496" label="CD9 (interacts with) TFRC" source="474" target="265" cy:directed="1"/>
+      <edge id="481" label="CD46 (interacts with) CD55" source="472" target="479" cy:directed="1"/>
+      <edge id="476" label="CD46 (interacts with) CD9" source="472" target="474" cy:directed="1"/>
+      <edge id="653" label="PRKCD (interacts with) STAT1" source="408" target="343" cy:directed="1"/>
+      <edge id="567" label="HMGB1 (interacts with) MSH2" source="395" target="565" cy:directed="1"/>
+      <edge id="659" label="PRKDC (interacts with) TOP2A" source="387" target="310" cy:directed="1"/>
+      <edge id="656" label="PRKDC (interacts with) RICTOR" source="387" target="546" cy:directed="1"/>
+      <edge id="635" label="MET (interacts with) RAC1" source="377" target="260" cy:directed="1"/>
+      <edge id="632" label="MDM2 (interacts with) SFN" source="364" target="458" cy:directed="1"/>
+      <edge id="629" label="MDM2 (interacts with) SP1" source="364" target="424" cy:directed="1"/>
+      <edge id="626" label="MDM2 (interacts with) PKM" source="364" target="508" cy:directed="1"/>
+      <edge id="562" label="HLA-B (interacts with) STAT1" source="356" target="343" cy:directed="1"/>
+      <edge id="650" label="PCNA (interacts with) TOP2A" source="348" target="310" cy:directed="1"/>
+      <edge id="670" label="STAT1 (interacts with) TBK1" source="343" target="554" cy:directed="1"/>
+      <edge id="667" label="STAT1 (interacts with) STAT6" source="343" target="588" cy:directed="1"/>
+      <edge id="531" label="FOXM1 (interacts with) TOP2A" source="318" target="310" cy:directed="1"/>
+      <edge id="528" label="FOXM1 (interacts with) MKI67" source="318" target="295" cy:directed="1"/>
+      <edge id="505" label="CENPF (interacts with) MKI67" source="305" target="295" cy:directed="1"/>
+      <edge id="502" label="CENPF (interacts with) TOP2A" source="305" target="310" cy:directed="1"/>
+      <edge id="499" label="CENPF (interacts with) FOXM1" source="305" target="318" cy:directed="1"/>
+      <edge id="446" label="CCNA2 (interacts with) TOP2A" source="300" target="310" cy:directed="1"/>
+      <edge id="443" label="CCNA2 (interacts with) PCNA" source="300" target="348" cy:directed="1"/>
+      <edge id="440" label="CCNA2 (interacts with) TFDP1" source="300" target="438" cy:directed="1"/>
+      <edge id="435" label="CCNA2 (interacts with) MKI67" source="300" target="295" cy:directed="1"/>
+      <edge id="432" label="CCNA2 (interacts with) CENPF" source="300" target="305" cy:directed="1"/>
+      <edge id="429" label="CCNA2 (interacts with) FOXM1" source="300" target="318" cy:directed="1"/>
+      <edge id="426" label="CCNA2 (interacts with) SP1" source="300" target="424" cy:directed="1"/>
+      <edge id="421" label="CCNA2 (interacts with) MDM2" source="300" target="364" cy:directed="1"/>
+      <edge id="418" label="CCNA2 (interacts with) CCNB1" source="300" target="235" cy:directed="1"/>
+      <edge id="638" label="MKI67 (interacts with) TOP2A" source="295" target="310" cy:directed="1"/>
+      <edge id="335" label="AURKA (interacts with) CCNB1" source="287" target="235" cy:directed="1"/>
+      <edge id="332" label="AURKA (interacts with) TOP2A" source="287" target="310" cy:directed="1"/>
+      <edge id="329" label="AURKA (interacts with) CCNA2" source="287" target="300" cy:directed="1"/>
+      <edge id="326" label="AURKA (interacts with) CENPF" source="287" target="305" cy:directed="1"/>
+      <edge id="323" label="AURKA (interacts with) MKI67" source="287" target="295" cy:directed="1"/>
+      <edge id="320" label="AURKA (interacts with) FOXM1" source="287" target="318" cy:directed="1"/>
+      <edge id="315" label="AURKA (interacts with) GSK3B" source="287" target="250" cy:directed="1"/>
+      <edge id="312" label="ANLN (interacts with) TOP2A" source="285" target="310" cy:directed="1"/>
+      <edge id="307" label="ANLN (interacts with) CENPF" source="285" target="305" cy:directed="1"/>
+      <edge id="302" label="ANLN (interacts with) CCNA2" source="285" target="300" cy:directed="1"/>
+      <edge id="297" label="ANLN (interacts with) MKI67" source="285" target="295" cy:directed="1"/>
+      <edge id="292" label="ANLN (interacts with) CCNB1" source="285" target="235" cy:directed="1"/>
+      <edge id="289" label="ANLN (interacts with) AURKA" source="285" target="287" cy:directed="1"/>
+      <edge id="282" label="AMBP (interacts with) B2M" source="280" target="270" cy:directed="1"/>
+      <edge id="525" label="ENO1 (interacts with) LDHA" source="275" target="523" cy:directed="1"/>
+      <edge id="520" label="ENO1 (interacts with) GPI" source="275" target="518" cy:directed="1"/>
+      <edge id="515" label="ENO1 (interacts with) IDH1" source="275" target="513" cy:directed="1"/>
+      <edge id="510" label="ENO1 (interacts with) PKM" source="275" target="508" cy:directed="1"/>
+      <edge id="358" label="B2M (interacts with) HLA-B" source="270" target="356" cy:directed="1"/>
+      <edge id="353" label="B2M (interacts with) TFRC" source="270" target="265" cy:directed="1"/>
+      <edge id="350" label="B2M (interacts with) PCNA" source="270" target="348" cy:directed="1"/>
+      <edge id="345" label="B2M (interacts with) STAT1" source="270" target="343" cy:directed="1"/>
+      <edge id="340" label="B2M (interacts with) TTR" source="270" target="338" cy:directed="1"/>
+      <edge id="559" label="GSK3B (interacts with) PSEN1" source="250" target="382" cy:directed="1"/>
+      <edge id="556" label="GSK3B (interacts with) TBK1" source="250" target="554" cy:directed="1"/>
+      <edge id="551" label="GSK3B (interacts with) STAT1" source="250" target="343" cy:directed="1"/>
+      <edge id="548" label="GSK3B (interacts with) RICTOR" source="250" target="546" cy:directed="1"/>
+      <edge id="543" label="GSK3B (interacts with) MDM2" source="250" target="364" cy:directed="1"/>
+      <edge id="415" label="CASP3 (interacts with) ROCK1" source="245" target="413" cy:directed="1"/>
+      <edge id="410" label="CASP3 (interacts with) PRKCD" source="245" target="408" cy:directed="1"/>
+      <edge id="405" label="CASP3 (interacts with) PARP4" source="245" target="403" cy:directed="1"/>
+      <edge id="400" label="CASP3 (interacts with) STAT1" source="245" target="343" cy:directed="1"/>
+      <edge id="397" label="CASP3 (interacts with) HMGB1" source="245" target="395" cy:directed="1"/>
+      <edge id="392" label="CASP3 (interacts with) GSK3B" source="245" target="250" cy:directed="1"/>
+      <edge id="389" label="CASP3 (interacts with) PRKDC" source="245" target="387" cy:directed="1"/>
+      <edge id="384" label="CASP3 (interacts with) PSEN1" source="245" target="382" cy:directed="1"/>
+      <edge id="379" label="CASP3 (interacts with) MET" source="245" target="377" cy:directed="1"/>
+      <edge id="374" label="CASP3 (interacts with) CCNA2" source="245" target="300" cy:directed="1"/>
+      <edge id="371" label="CASP3 (interacts with) TNFRSF10B" source="245" target="369" cy:directed="1"/>
+      <edge id="366" label="CASP3 (interacts with) MDM2" source="245" target="364" cy:directed="1"/>
+      <edge id="361" label="CASP3 (interacts with) CCNB1" source="245" target="235" cy:directed="1"/>
+      <edge id="606" label="ITGA2 (interacts with) LAMA3" source="240" target="604" cy:directed="1"/>
+      <edge id="601" label="ITGA2 (interacts with) MET" source="240" target="377" cy:directed="1"/>
+      <edge id="598" label="ITGA2 (interacts with) LAMC2" source="240" target="596" cy:directed="1"/>
+      <edge id="593" label="ITGA2 (interacts with) ITGB4" source="240" target="185" cy:directed="1"/>
+      <edge id="469" label="CCNB1 (interacts with) TOP2A" source="235" target="310" cy:directed="1"/>
+      <edge id="466" label="CCNB1 (interacts with) FOXM1" source="235" target="318" cy:directed="1"/>
+      <edge id="463" label="CCNB1 (interacts with) CENPF" source="235" target="305" cy:directed="1"/>
+      <edge id="460" label="CCNB1 (interacts with) SFN" source="235" target="458" cy:directed="1"/>
+      <edge id="455" label="CCNB1 (interacts with) MKI67" source="235" target="295" cy:directed="1"/>
+      <edge id="452" label="CCNB1 (interacts with) PCNA" source="235" target="348" cy:directed="1"/>
+      <edge id="449" label="CCNB1 (interacts with) MDM2" source="235" target="364" cy:directed="1"/>
+      <edge id="612" label="ITGB4 (interacts with) LAMC2" source="185" target="596" cy:directed="1"/>
+      <edge id="609" label="ITGB4 (interacts with) LAMA3" source="185" target="604" cy:directed="1"/>
+      <edge id="277" label="ACTB (interacts with) ENO1" source="183" target="275" cy:directed="1"/>
+      <edge id="272" label="ACTB (interacts with) B2M" source="183" target="270" cy:directed="1"/>
+      <edge id="267" label="ACTB (interacts with) TFRC" source="183" target="265" cy:directed="1"/>
+      <edge id="262" label="ACTB (interacts with) RAC1" source="183" target="260" cy:directed="1"/>
+      <edge id="257" label="ACTB (interacts with) TUBB" source="183" target="255" cy:directed="1"/>
+      <edge id="252" label="ACTB (interacts with) GSK3B" source="183" target="250" cy:directed="1"/>
+      <edge id="247" label="ACTB (interacts with) CASP3" source="183" target="245" cy:directed="1"/>
+      <edge id="242" label="ACTB (interacts with) ITGA2" source="183" target="240" cy:directed="1"/>
+      <edge id="237" label="ACTB (interacts with) CCNB1" source="183" target="235" cy:directed="1"/>
+      <edge id="187" label="ACTB (interacts with) ITGB4" source="183" target="185" cy:directed="1"/>
+    </graph>
+  </att>
+  <att>
+    <graph id="1456" label="string_interactions_short (3).tsv_MCC_top20_with_shortest_paths" cy:registered="1">
+      <node xlink:href="#300"/>
+      <node xlink:href="#364"/>
+      <node xlink:href="#235"/>
+      <node xlink:href="#523"/>
+      <node xlink:href="#295"/>
+      <node xlink:href="#518"/>
+      <node xlink:href="#513"/>
+      <node xlink:href="#287"/>
+      <node xlink:href="#318"/>
+      <node xlink:href="#285"/>
+      <node xlink:href="#348"/>
+      <node xlink:href="#250"/>
+      <node xlink:href="#185"/>
+      <node xlink:href="#343"/>
+      <node xlink:href="#183"/>
+      <node xlink:href="#310"/>
+      <node xlink:href="#245"/>
+      <node xlink:href="#275"/>
+      <node xlink:href="#305"/>
+      <node xlink:href="#240"/>
+      <edge xlink:href="#446"/>
+      <edge xlink:href="#443"/>
+      <edge xlink:href="#435"/>
+      <edge xlink:href="#432"/>
+      <edge xlink:href="#429"/>
+      <edge xlink:href="#421"/>
+      <edge xlink:href="#418"/>
+      <edge xlink:href="#469"/>
+      <edge xlink:href="#466"/>
+      <edge xlink:href="#463"/>
+      <edge xlink:href="#455"/>
+      <edge xlink:href="#452"/>
+      <edge xlink:href="#449"/>
+      <edge xlink:href="#638"/>
+      <edge xlink:href="#540"/>
+      <edge xlink:href="#537"/>
+      <edge xlink:href="#575"/>
+      <edge xlink:href="#335"/>
+      <edge xlink:href="#332"/>
+      <edge xlink:href="#329"/>
+      <edge xlink:href="#326"/>
+      <edge xlink:href="#323"/>
+      <edge xlink:href="#320"/>
+      <edge xlink:href="#315"/>
+      <edge xlink:href="#531"/>
+      <edge xlink:href="#528"/>
+      <edge xlink:href="#312"/>
+      <edge xlink:href="#307"/>
+      <edge xlink:href="#302"/>
+      <edge xlink:href="#297"/>
+      <edge xlink:href="#292"/>
+      <edge xlink:href="#289"/>
+      <edge xlink:href="#650"/>
+      <edge xlink:href="#551"/>
+      <edge xlink:href="#543"/>
+      <edge xlink:href="#237"/>
+      <edge xlink:href="#187"/>
+      <edge xlink:href="#277"/>
+      <edge xlink:href="#252"/>
+      <edge xlink:href="#247"/>
+      <edge xlink:href="#242"/>
+      <edge xlink:href="#366"/>
+      <edge xlink:href="#361"/>
+      <edge xlink:href="#400"/>
+      <edge xlink:href="#392"/>
+      <edge xlink:href="#374"/>
+      <edge xlink:href="#525"/>
+      <edge xlink:href="#520"/>
+      <edge xlink:href="#515"/>
+      <edge xlink:href="#505"/>
+      <edge xlink:href="#502"/>
+      <edge xlink:href="#499"/>
+      <edge xlink:href="#593"/>
+    </graph>
+  </att>
+  <att>
+    <graph id="1856" label="1: Cluster 1 (Score: 7.714)" cy:registered="1">
+      <node xlink:href="#305"/>
+      <node xlink:href="#310"/>
+      <node xlink:href="#295"/>
+      <node xlink:href="#235"/>
+      <node xlink:href="#300"/>
+      <node xlink:href="#285"/>
+      <node xlink:href="#318"/>
+      <node xlink:href="#287"/>
+      <edge xlink:href="#505"/>
+      <edge xlink:href="#502"/>
+      <edge xlink:href="#499"/>
+      <edge xlink:href="#638"/>
+      <edge xlink:href="#469"/>
+      <edge xlink:href="#466"/>
+      <edge xlink:href="#463"/>
+      <edge xlink:href="#455"/>
+      <edge xlink:href="#429"/>
+      <edge xlink:href="#418"/>
+      <edge xlink:href="#446"/>
+      <edge xlink:href="#435"/>
+      <edge xlink:href="#432"/>
+      <edge xlink:href="#302"/>
+      <edge xlink:href="#297"/>
+      <edge xlink:href="#292"/>
+      <edge xlink:href="#289"/>
+      <edge xlink:href="#312"/>
+      <edge xlink:href="#307"/>
+      <edge xlink:href="#531"/>
+      <edge xlink:href="#528"/>
+      <edge xlink:href="#335"/>
+      <edge xlink:href="#332"/>
+      <edge xlink:href="#329"/>
+      <edge xlink:href="#326"/>
+      <edge xlink:href="#323"/>
+      <edge xlink:href="#320"/>
+    </graph>
+  </att>
+  <att>
+    <graph id="2301" label="string_interactions_short (3).tsv_Degree_top20_with_shortest_paths" cy:registered="1">
+      <node xlink:href="#270"/>
+      <node xlink:href="#300"/>
+      <node xlink:href="#364"/>
+      <node xlink:href="#235"/>
+      <node xlink:href="#295"/>
+      <node xlink:href="#518"/>
+      <node xlink:href="#387"/>
+      <node xlink:href="#513"/>
+      <node xlink:href="#287"/>
+      <node xlink:href="#318"/>
+      <node xlink:href="#285"/>
+      <node xlink:href="#348"/>
+      <node xlink:href="#250"/>
+      <node xlink:href="#343"/>
+      <node xlink:href="#183"/>
+      <node xlink:href="#310"/>
+      <node xlink:href="#245"/>
+      <node xlink:href="#275"/>
+      <node xlink:href="#305"/>
+      <node xlink:href="#240"/>
+      <edge xlink:href="#350"/>
+      <edge xlink:href="#345"/>
+      <edge xlink:href="#446"/>
+      <edge xlink:href="#443"/>
+      <edge xlink:href="#435"/>
+      <edge xlink:href="#432"/>
+      <edge xlink:href="#429"/>
+      <edge xlink:href="#421"/>
+      <edge xlink:href="#418"/>
+      <edge xlink:href="#469"/>
+      <edge xlink:href="#466"/>
+      <edge xlink:href="#463"/>
+      <edge xlink:href="#455"/>
+      <edge xlink:href="#452"/>
+      <edge xlink:href="#449"/>
+      <edge xlink:href="#638"/>
+      <edge xlink:href="#537"/>
+      <edge xlink:href="#659"/>
+      <edge xlink:href="#335"/>
+      <edge xlink:href="#332"/>
+      <edge xlink:href="#329"/>
+      <edge xlink:href="#326"/>
+      <edge xlink:href="#323"/>
+      <edge xlink:href="#320"/>
+      <edge xlink:href="#315"/>
+      <edge xlink:href="#531"/>
+      <edge xlink:href="#528"/>
+      <edge xlink:href="#312"/>
+      <edge xlink:href="#307"/>
+      <edge xlink:href="#302"/>
+      <edge xlink:href="#297"/>
+      <edge xlink:href="#292"/>
+      <edge xlink:href="#289"/>
+      <edge xlink:href="#650"/>
+      <edge xlink:href="#551"/>
+      <edge xlink:href="#543"/>
+      <edge xlink:href="#237"/>
+      <edge xlink:href="#277"/>
+      <edge xlink:href="#272"/>
+      <edge xlink:href="#252"/>
+      <edge xlink:href="#247"/>
+      <edge xlink:href="#242"/>
+      <edge xlink:href="#366"/>
+      <edge xlink:href="#361"/>
+      <edge xlink:href="#400"/>
+      <edge xlink:href="#392"/>
+      <edge xlink:href="#389"/>
+      <edge xlink:href="#374"/>
+      <edge xlink:href="#520"/>
+      <edge xlink:href="#515"/>
+      <edge xlink:href="#505"/>
+      <edge xlink:href="#502"/>
+      <edge xlink:href="#499"/>
+    </graph>
+  </att>
+</graph>

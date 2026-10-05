@@ -1,0 +1,14 @@
+{
+  "archive": "reanalysis/figures/publication_revision/PDAC_publication_figures.zip",
+  "figure_sets": 22,
+  "formats": [
+    "600-dpi PNG",
+    "vector PDF",
+    "editable SVG"
+  ],
+  "members": 96,
+  "bytes": 10147303,
+  "sha256": "1e4a1a4fb4d25d938926b2840214fe94347c9cb1a0c89d8d393bf7bbac7b9ac1",
+  "crc_and_member_hashes": "PASS",
+  "Cytoscape_desktop_import_tested": false
+}

@@ -1,0 +1,23 @@
+source,target,edge_type
+hsa-miR-107,ACTB,Cached target annotation
+hsa-miR-107,CCNB1,Cached target annotation
+hsa-miR-107,TOP2A,Cached target annotation
+hsa-miR-107,ANLN,Cached target annotation
+hsa-miR-107,CCNA2,Cached target annotation
+hsa-miR-107,PCNA,Cached target annotation
+hsa-miR-107,FOXM1,Cached target annotation
+hsa-miR-107,MKI67,Cached target annotation
+hsa-miR-107,ITGA2,Cached target annotation
+hsa-miR-107,CASP3,Cached target annotation
+hsa-miR-107,CENPF,Cached target annotation
+hsa-miR-107,STAT1,Cached target annotation
+hsa-miR-20a-5p,CCNB1,Cached target annotation
+hsa-miR-20a-5p,MKI67,Cached target annotation
+hsa-miR-20a-5p,ANLN,Cached target annotation
+hsa-miR-20a-5p,TOP2A,Cached target annotation
+hsa-miR-20a-5p,ACTB,Cached target annotation
+hsa-miR-20a-5p,CASP3,Cached target annotation
+hsa-miR-20a-5p,CENPF,Cached target annotation
+hsa-miR-20a-5p,ITGA2,Cached target annotation
+hsa-miR-20a-5p,STAT1,Cached target annotation
+hsa-miR-20a-5p,FOXM1,Cached target annotation

@@ -11,6 +11,15 @@ bulk tissue contrasts, nests plasma feature selection within cross-validation,
 and evaluates diagnostic models on the same-assay prediagnostic PLCO cohort.
 Every new scientific figure is supplied as both PNG and PDF.
 
+**Revised publication artwork:** [22 main and supplementary figure sets](reanalysis/figures/publication_revision/)
+are available as 600-dpi PNG, fully vector PDF and editable SVG. The
+[figure revision audit](docs/publication_figure_revision.md) documents the
+recovered original Cytoscape session, 56-node STRING graph, 12-gene subgraph,
+cached miRNA annotation graph and export checks. The images are rendered with
+R/grid; the [editable Cytoscape files](reanalysis/results/figure_revision/networks/)
+are supplied separately. These presentation changes do not refit the analyses
+or establish a clinical biomarker panel.
+
 ## Current Findings
 
 Spatial tissue-state associations remain, but patient identity is inferred from
@@ -60,7 +69,7 @@ scripts/
 
 reanalysis/
   results/       Corrected primary and sensitivity tables.
-  figures/       New PNG/PDF scientific figure pairs.
+  figures/       Scientific PNG/PDF pairs and revised PNG/PDF/SVG panel sets.
   provenance/    Session information, checksums, and output checks.
 
 data/source/

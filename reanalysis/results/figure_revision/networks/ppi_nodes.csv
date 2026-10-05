@@ -1,0 +1,57 @@
+Gene,Evidence_class,Node_type,Historical12
+ACTB,Broad association support,Gene,True
+AMBP,Network context,Gene,False
+ANLN,Broad association support,Gene,True
+AURKA,Network context,Gene,False
+B2M,Network context,Gene,False
+CASP3,Other historical candidate,Gene,True
+CCNA2,Broad association support,Gene,True
+CCNB1,Other historical candidate,Gene,True
+CD46,Network context,Gene,False
+CD47,Network context,Gene,False
+CD55,Network context,Gene,False
+CD68,Network context,Gene,False
+CD9,Network context,Gene,False
+CENPF,Broad association support,Gene,True
+ENO1,Network context,Gene,False
+FOXM1,Other historical candidate,Gene,True
+GPI,Network context,Gene,False
+GSK3B,Network context,Gene,False
+HLA-B,Network context,Gene,False
+HMGB1,Network context,Gene,False
+IDH1,Network context,Gene,False
+IFNGR2,Network context,Gene,False
+IL13RA1,Network context,Gene,False
+ITGA2,Broad association support,Gene,True
+ITGB4,Network context,Gene,False
+KRT19,Network context,Gene,False
+LAMA3,Network context,Gene,False
+LAMC2,Network context,Gene,False
+LDHA,Network context,Gene,False
+LGALS3,Network context,Gene,False
+MDM2,Network context,Gene,False
+MET,Network context,Gene,False
+MKI67,Broad association support,Gene,True
+MSH2,Network context,Gene,False
+NF1,Network context,Gene,False
+PARP4,Network context,Gene,False
+PCNA,Other historical candidate,Gene,True
+PKM,Network context,Gene,False
+PRKCD,Network context,Gene,False
+PRKDC,Network context,Gene,False
+PSEN1,Network context,Gene,False
+RAC1,Network context,Gene,False
+RICTOR,Network context,Gene,False
+ROCK1,Network context,Gene,False
+SERPINB5,Network context,Gene,False
+SFN,Network context,Gene,False
+SP1,Network context,Gene,False
+STAT1,Early spatial association,Gene,True
+STAT6,Network context,Gene,False
+TBK1,Network context,Gene,False
+TFDP1,Network context,Gene,False
+TFRC,Network context,Gene,False
+TNFRSF10B,Network context,Gene,False
+TOP2A,Broad association support,Gene,True
+TTR,Network context,Gene,False
+TUBB,Network context,Gene,False

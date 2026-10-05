@@ -1,0 +1,8 @@
+Metric,Count
+historical_candidates,12
+spatial_omnibus_all_target_significant,8
+spatial_early_all_target_significant,1
+spatial_late_all_target_significant,7
+paired_tumor_all_gene_significant,12
+culture_all_gene_significant,10
+chip_CP_all_gene_significant,11

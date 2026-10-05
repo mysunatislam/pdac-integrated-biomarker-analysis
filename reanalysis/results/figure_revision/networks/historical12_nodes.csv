@@ -1,0 +1,13 @@
+Gene,Evidence_class,Node_type,Historical12
+ACTB,Broad association support,Gene,True
+ANLN,Broad association support,Gene,True
+CASP3,Other historical candidate,Gene,True
+CCNA2,Broad association support,Gene,True
+CCNB1,Other historical candidate,Gene,True
+CENPF,Broad association support,Gene,True
+FOXM1,Other historical candidate,Gene,True
+ITGA2,Broad association support,Gene,True
+MKI67,Broad association support,Gene,True
+PCNA,Other historical candidate,Gene,True
+STAT1,Early spatial association,Gene,True
+TOP2A,Broad association support,Gene,True
