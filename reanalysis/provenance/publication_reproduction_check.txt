@@ -1,0 +1,13 @@
+Publication same-machine reproduction check: PASS
+Date: 2026-10-05
+Reference commit: 910f7005cbc58347c403bc12629821eb97059320
+Environment: existing Windows / R 4.6.0 analysis environment
+Command: Rscript scripts/reanalysis/21_inflammatory_cohort_analysis.R
+Full-script exit status: 0
+All eight named models estimated; all 59 CP omissions completed for each base model
+Inputs: committed prepared gene matrix and metadata; no new normalization or source downloads
+Result-table comparison: git diff --exit-code -- reanalysis/results/publication returned 0
+Comparison uses Git's configured text normalization, not a claim about raw line-ending bytes
+Post-rerun validation: Rscript scripts/reanalysis/23_validate_publication.R
+This is not a clean dependency restoration, second-machine or second-OS check
+Computational reproduction does not establish clinical specificity or biological mechanism

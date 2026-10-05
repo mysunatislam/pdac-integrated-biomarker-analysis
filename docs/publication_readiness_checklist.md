@@ -5,6 +5,12 @@ reporting-guideline submission form or a prediction of journal acceptance.
 The completed E-MTAB-1791 analysis and its limitations are recorded in the generated
 [publication audit](publication_audit_methods_results.md).
 
+Numerical/output checks and visual review of both new PDF figures are complete.
+The full larger-cohort script was rerun from the committed matrices without
+changing its result tables; see the
+[same-machine reproduction record](../reanalysis/provenance/publication_reproduction_check.txt).
+This does not replace a clean restoration on another machine or OS.
+
 ## Scientific Claims
 
 | Item | Evidence now available | Required treatment in the manuscript |
