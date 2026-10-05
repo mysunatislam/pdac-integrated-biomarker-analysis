@@ -21,7 +21,7 @@ In a separate serum study, the fixed miRNA panels did not materially improve nes
 
 GSE59856's benign group is not a CP-only cohort. GSE85589's 29 non-cancer controls are 19 healthy plus 10 cholelithiasis, not 29 healthy. PC is the deposited pancreatic-cancer label; sample-level histologic subtype is not used to relabel those serum participants as proven PDAC. Distinct datasets are treated as separate studies; no documented participant overlap was identified among the analyzed cohorts, but explicit cross-study donor identifiers are unavailable.
 
-E-MTAB-1791 was inspected at metadata/file-list level and deferred pending a compact matrix and donor/clinical-history audit. GSE179248 and GSE295071 share donors and must not be counted as two independent replications. Known GSE28735/GSE62452 overlap also requires care in later extensions.
+E-MTAB-1791 was initially deferred after metadata inspection. The later [publication audit](publication_audit_methods_results.md) records its current preparation/analysis status, clinical-history eligibility, donor limitations and the composition sensitivities for the existing tissue/culture cohorts. GSE179248 and GSE295071 share donors and must not be counted as two independent replications. Known GSE28735/GSE62452 overlap also requires care in later extensions.
 
 ## Methods
 
@@ -124,7 +124,7 @@ Each figure has PNG and PDF versions in reanalysis/figures/external/.
 
 The added data strengthen a focused cross-cohort tissue-state reproducibility analysis and provide a negative clinical-increment benchmark in serum. They do not rescue the original early-detection or malignant-switch claims. A journal-facing paper should distinguish paired culture response, cross-sectional tissue association, diagnostic case-control discrimination, and prediagnostic transportability throughout.
 
-Substantive gaps remain: confirm spatial patient IDs, obtain an adequately sized independent and batch-balanced cancer-versus-inflammatory tissue cohort, audit cell composition, and resolve sample-level PLCO lead time/clinical information. Public-only analysis does not require inventing lab validation, but neither dataset accumulation nor attractive ROC curves guarantees novelty or journal acceptance. The full manuscript still requires author review, declarations and a focused prior-art assessment.
+The gaps identified after these analyses motivated the [publication follow-up](publication_audit_methods_results.md): clinical-profile corroboration, composition sensitivity and a larger inflammatory comparison. Direct spatial patient IDs, individual clinical fields for the larger cohort and sample-level PLCO lead time remain unavailable. The follow-up must be read before making cellular-origin or CP-specificity claims. Neither dataset accumulation nor attractive ROC curves guarantees novelty or journal acceptance; the full manuscript still requires author review and declarations.
 
 ## Reproduction and Sources
 

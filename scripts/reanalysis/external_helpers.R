@@ -4,8 +4,8 @@ external_dir <- "reanalysis/results/external"
 dir.create(external_dir, recursive = TRUE, showWarnings = FALSE)
 external_path <- function(id) file.path("data/external", paste0(id, "_series_matrix.txt.gz"))
 
-read_external_geo <- function(id, expression = TRUE) {
-  lines <- readLines(gzfile(external_path(id)), warn = FALSE)
+read_external_geo <- function(id, expression = TRUE, path = external_path(id)) {
+  lines <- readLines(gzfile(path), warn = FALSE)
   parts <- strsplit(lines[startsWith(lines, "!Sample_")], "\t", fixed = TRUE)
   fields <- lapply(parts, function(x) gsub('^"|"$', "", x[-1]))
   names(fields) <- make.unique(vapply(parts, function(x) substring(x[1], 2), character(1)))

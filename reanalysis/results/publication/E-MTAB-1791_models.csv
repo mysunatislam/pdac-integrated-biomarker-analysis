@@ -1,0 +1,9 @@
+"Model","Variant","Status","Specimens","PDAC_Specimens","CP_Specimens","Deposited_Patient_ID_Available","Age_Sex_Adjustment_Available","Chips","Mixed_Diagnosis_Chips","Design_Columns","Design_Rank","Residual_DF","Condition_Number"
+"Unadjusted","Unadjusted_for_composition","Estimated",254,195,59,FALSE,FALSE,85,23,2,2,252,4.25032745261361
+"Unadjusted","Plus_T_cells","Estimated",254,195,59,FALSE,FALSE,85,23,3,3,251,3.69790705143716
+"Unadjusted","Plus_Fibroblasts","Estimated",254,195,59,FALSE,FALSE,85,23,3,3,251,3.70121843319416
+"Unadjusted","Plus_both","Estimated",254,195,59,FALSE,FALSE,85,23,4,4,250,3.69487057901364
+"Chip_adjusted","Unadjusted_for_composition","Estimated",254,195,59,FALSE,FALSE,85,23,86,86,168,1339.75354992816
+"Chip_adjusted","Plus_T_cells","Estimated",254,195,59,FALSE,FALSE,85,23,87,87,167,2063.51110111061
+"Chip_adjusted","Plus_Fibroblasts","Estimated",254,195,59,FALSE,FALSE,85,23,87,87,167,2011.28701955787
+"Chip_adjusted","Plus_both","Estimated",254,195,59,FALSE,FALSE,85,23,88,88,166,2021.82197577376

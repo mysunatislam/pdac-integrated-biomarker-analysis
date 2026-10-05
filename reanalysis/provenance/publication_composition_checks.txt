@@ -1,0 +1,5 @@
+Publication composition checks: PASS
+48 ROIs and eight published clinical-profile crosswalks
+Original model variants reproduce earlier estimates; insufficient-coverage models retained
+Baseline STAT1 effects reproduce previous results within 1e-10
+Coverage, CIs, degrees of freedom, exploratory BH and source hashes checked

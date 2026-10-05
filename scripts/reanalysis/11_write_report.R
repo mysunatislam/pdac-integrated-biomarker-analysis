@@ -175,6 +175,8 @@ report <- c(
   "",
   "The strongest retained observation is cross-sectional spatial tissue-state association after accounting for repeated ROIs. The current data do not establish a confounder-robust CP-specific gene set or a transferable prediagnostic miRNA panel. A credible manuscript should report the adjustment sensitivity and negative external evaluation directly, with historical network/database findings moved to supporting material. Publication readiness still depends on confirming spatial identities, resolving source-score/preprocessing differences, and establishing a focused contribution beyond the primary studies.",
   "",
+  "The later [publication audit](publication_audit_methods_results.md) corroborates the eight inferred clinical profiles against the source article and reports composition sensitivities and the status of a larger inflammatory comparison. Read that follow-up alongside this original report; the direct patient identifiers and individual clinical-data limitations are not silently resolved.",
+  "",
   "Detailed claim changes and remaining constraints are in [reanalysis_claims_and_limitations.md](reanalysis_claims_and_limitations.md). Original dataset publications and accession links are in [the reanalysis guide](../reanalysis/README.md). All source studies must be cited in the manuscript.",
   "",
   "## Figures and Captions",

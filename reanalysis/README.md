@@ -13,6 +13,14 @@ documents paired human tissue/culture checks and independent serum analyses.
 Its frozen families and cohort exclusions are specified in
 [the dated protocol](../docs/external_validation_protocol.md).
 
+The [publication audit](../docs/publication_audit_methods_results.md) adds a
+source-paper case crosswalk, immune/stromal composition sensitivities and the
+completed larger inflammatory-cohort analysis (195 PDAC / 59 CP specimens). The
+[focused prior-art assessment](../docs/publication_prior_art.md) and
+[submission checklist](../docs/publication_readiness_checklist.md) explain the
+remaining manuscript work and unavailable metadata. These are post hoc audits,
+not a prospective registration or a declaration of journal readiness.
+
 ## Reproduce
 
 Use the instructions in [scripts/reanalysis/README.md](../scripts/reanalysis/README.md).
@@ -35,6 +43,7 @@ on a second operating system.
 | GO enrichment | Supplementary; background restricted to jointly measurable, GO-annotated genes |
 | PPI and multiMiR | Historical supporting material, without a new causal or clinical claim |
 | Additional tissue/culture | Paired-donor associations and directional compatibility, not proof of in-vivo progression |
+| Larger inflammatory cohort | 303 of 501 measurable frozen genes pass chip-adjusted family FDR; STAT1 threshold significance is sensitive to multiplicity and CP omissions; clinical/donor limits remain |
 | Additional serum | Fixed marker associations and exploratory nested-CV CA19-9 increment; no compelling panel increment |
 
 The spatial labels are tissue states sampled at one time, not longitudinal

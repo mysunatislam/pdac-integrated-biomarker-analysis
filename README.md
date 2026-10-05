@@ -33,6 +33,20 @@ inferential validation because chip and disease are perfectly confounded.
 See [the external-cohort report](docs/external_validation_methods_results.md)
 and [dated specification](docs/external_validation_protocol.md).
 
+The [publication audit](docs/publication_audit_methods_results.md) additionally
+cross-checks spatial clinical profiles against the published cases and tests
+STAT1's dependence on immune/stromal expression proxies. Paired tumor/normal
+STAT1 expression is strongly sensitive to fibroblast-score adjustment; a
+tumor-cell-intrinsic effect is not established. The larger E-MTAB-1791
+inflammatory-cohort analysis includes 195 PDAC and 59 CP specimens,
+with missing individual clinical variables and an unidentified repeated CP
+patient explicitly recorded. Of 501 measurable frozen spatial genes, 303 pass
+the chip-adjusted family FDR threshold. STAT1's chip-adjusted direction is
+positive, but its significance is sensitive to the multiplicity family and
+single-CP omissions. This is not proof of malignancy specificity.
+The [focused prior-art assessment](docs/publication_prior_art.md) defines the
+narrower reproducibility question and the claims that should not be retained.
+
 ## Repository Layout
 
 ```text
@@ -54,6 +68,9 @@ data/source/
 
 data/external/
   Additional public matrices, paired ADM counts and compact platform annotations.
+
+data/publication/
+  Pinned composition signatures, source/array manifests and compact inflammatory-cohort matrices.
 
 results/tables/
   Final and supporting CSV/TXT result tables grouped by analysis layer.
@@ -89,9 +106,11 @@ The included scripts were recovered from the working project and RStudio source 
 
 ## Data Availability
 
-All source datasets are public Gene Expression Omnibus datasets: `GSE143754`, `GSE208536`, `GSE304572`, `GSE259327`, and `GSE268771`.
+The original source datasets are public Gene Expression Omnibus datasets: `GSE143754`, `GSE208536`, `GSE304572`, `GSE259327`, and `GSE268771`.
 The extension uses `GSE15471`, `GSE179248`, `GSE91035`, `GSE59856` and `GSE85589`;
 `GSE101462` is retained for its eligibility audit only.
+The publication sensitivity extension also uses ArrayExpress/BioStudies
+`E-MTAB-1791`; eligible records and analysis status are documented separately.
 Source studies and public metadata limitations are documented in
 [the corrected analysis guide](reanalysis/README.md). Package versions are
 recorded in `renv.lock`; run instructions are in

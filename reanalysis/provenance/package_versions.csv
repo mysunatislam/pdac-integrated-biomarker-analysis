@@ -15,3 +15,8 @@
 "edgeR","4.10.5"
 "hgu133plus2.db","3.13.0"
 "glmnet","5.1"
+"curl","7.1.0"
+"jsonlite","2.0.0"
+"remotes","2.5.0"
+"MCPcounter","1.2.0"
+"data.table","1.18.4"

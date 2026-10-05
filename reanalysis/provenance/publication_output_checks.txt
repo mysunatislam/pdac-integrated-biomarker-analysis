@@ -1,0 +1,10 @@
+Publication output checks: PASS
+Eight unique published clinical profiles crosswalked, not direct IDs
+48 ROIs / 22 observed case-state means; no relabeling of unexpected counts
+Original STAT1 base effects reproduced; failed composition models retained
+195 PDAC and 59 primary CP specimens; 9 tumor-associated CP specimens excluded
+254 source arrays checked; frozen-family BH, CIs and omission envelopes checked
+All eight STAT1 model effects and all base-model omissions independently recomputed by ordinary least squares
+Frozen-family summary counts and effect correlations independently recomputed
+No claim of 254 independent patients or individual clinical adjustment
+All reanalysis R scripts parse; two PNG/PDF figure pairs exist

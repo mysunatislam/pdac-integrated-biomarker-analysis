@@ -1,0 +1,14 @@
+"Disease","Clinical_History","Specimens"
+"cystic tumor","cystic tumor tissue from pancreas",24
+"endocrine tumor","endocrine tumor tissue from pancreas",18
+"normal","normal tissue from healthy pancreas",41
+"normal","normal tissue from pancreas with a cystic tumor",22
+"normal","normal tissue from pancreas with an endocrine tumor",2
+"normal","normal tissue from pancreas with other tumors",11
+"normal","normal tissue from pancreas with pancreatic ductal adenocarcinoma",30
+"normal","normal tissue from pancreas with pancreatitis",15
+"neoplasm","other tumor tissue from pancreas",31
+"pancreatic ductal adenocarcinoma","pancreatic ductal adenocarcinoma tissue",195
+"pancreatitis","pancreatitis tissue from pancreas with other tumors",4
+"pancreatitis","pancreatitis tissue from pancreas with pancreatic ductal adenocarcinoma",5
+"pancreatitis","pancreatitis tissue from pancreas with pancreatitis",59

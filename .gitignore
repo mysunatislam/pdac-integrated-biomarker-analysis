@@ -1,4 +1,5 @@
 .codex_tmp_extract/
+__pycache__/
 .Rproj.user/
 .Rhistory
 .RData

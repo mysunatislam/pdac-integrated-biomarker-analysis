@@ -69,3 +69,45 @@ python scripts/reanalysis/verify_figure_exports.py --poppler pdftoppm
 This writes `reanalysis/provenance/figure_checks.csv` and PDF renders under
 the ignored `tmp/figure_qa/` directory. It checks page counts, paired export
 names, dimensions, and nonblank pixels; visual inspection is still required.
+
+## Publication Sensitivities
+
+Steps 18-23 audit the published spatial case profiles, test STAT1 sensitivity
+to MCP-counter expression proxies, and analyze the larger E-MTAB-1791
+PDAC/pancreatitis comparison. They do not refit or retune PLCO predictions.
+Read the dated specification and publication audit before interpreting effects.
+
+```powershell
+Rscript scripts/reanalysis/run_publication.R
+```
+
+When the prepared matrices in `data/publication/` are present, the workflow
+uses them directly. Fresh source preparation is explicitly requested with
+`--download`. This is a substantial transfer: approximately 2.5 GB of selected
+compressed ZIP members, or 8.4 GB through the uncompressed fallback. The array
+files repeat annotation, so only compact matrices, mapping tables and source
+checksums are committed. Temporary arrays and resumable RDS caches are stored
+outside the repository in LocalAppData on Windows or `~/.cache` on Unix;
+`PDAC_DATA_CACHE` overrides this location. Final artifacts stay in the repo.
+
+Install the pinned Python download dependencies with Python 3.11 or later in a separate environment:
+
+```powershell
+python -m pip install -r scripts/reanalysis/requirements-publication.txt
+Rscript scripts/reanalysis/run_publication.R --download "--python=C:/path/to/python.exe"
+```
+
+The downloader uses the exact archives named in the source SDRF and checks
+ZIP CRCs, decompressed sizes, MD5s and cross-array annotation consistency.
+Completed ZIP members are promoted from temporary files only after integrity
+checks; reusing a raw file also requires its matching integrity record and MD5.
+Offline interrupted-transfer and CRC tests can be run with
+`python -m unittest discover -s scripts/reanalysis/tests`.
+The first newly parsed source array in a preparation run is compared exactly
+with the base-R reference parser; annotations and numeric vectors must agree.
+The saved parser-equivalence record identifies the checked file and its hash.
+MCP-counter R code and gene signatures are pinned to a specific Git commit.
+The 254 observations are **specimens**, not 254 verified independent patients.
+The source reports 59 CP specimens from 58 patients and no individual age/sex
+fields in the SDRF. Omit-one-CP and composition analyses are sensitivity checks,
+not replacements for missing patient identifiers or clinical adjustment.

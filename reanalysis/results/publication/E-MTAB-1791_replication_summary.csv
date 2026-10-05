@@ -1,0 +1,3 @@
+"Model","All_Genes_Tested","All_Gene_BH_Significant","Measurable_Frozen","Frozen_BH_Significant","Same_Direction_As_Spatial","Spatial_And_CP_Concordant_Significant","Frozen_Significant_All_Omissions","Spearman_Effect_Correlation"
+"Chip_adjusted",20121,7624,501,303,403,256,261,0.743361309254002
+"Unadjusted",20121,12160,501,377,394,322,364,0.783850943531264

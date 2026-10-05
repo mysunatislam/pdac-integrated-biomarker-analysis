@@ -1,0 +1,9 @@
+Published_Case,Age,Sex,Grade,Stage,Source
+CASE1,67,M,G2,PT3N1,https://doi.org/10.3389/fimmu.2022.961457
+CASE2,80,M,G2,PT3N1,https://doi.org/10.3389/fimmu.2022.961457
+CASE3,86,M,G2,PT2N0,https://doi.org/10.3389/fimmu.2022.961457
+CASE4,66,F,G2,PT2N0,https://doi.org/10.3389/fimmu.2022.961457
+CASE5,83,M,G2,PT2N1,https://doi.org/10.3389/fimmu.2022.961457
+CASE6,67,F,G1,PT1CN0,https://doi.org/10.3389/fimmu.2022.961457
+CASE7,83,F,G1-G3,PT3N1,https://doi.org/10.3389/fimmu.2022.961457
+CASE8,66,M,G3,PT2N,https://doi.org/10.3389/fimmu.2022.961457

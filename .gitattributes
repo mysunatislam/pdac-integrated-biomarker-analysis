@@ -1,2 +1,4 @@
 # Preserve source annotation bytes so recorded checksums survive checkout.
 data/external/*_annotation.csv -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+# Publication input and compact matrix hashes must also survive checkout.
+data/publication/* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
