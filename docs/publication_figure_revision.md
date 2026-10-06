@@ -33,7 +33,8 @@ The 12-gene induced subgraph contains 29 saved edges. No new STRING query,
 centrality calculation or MCODE reranking was performed.
 
 Gene colors identify the corrected association evidence, not degree or
-validation strength. Node sizes and edge widths are constant. STRING evidence
+validation strength. Node widths accommodate labels; size is not mapped to
+degree or evidence scores. Edge widths are constant. STRING evidence
 can include coexpression, text mining and database annotations; these edges
 are not asserted to be direct physical binding or causal interactions.
 

@@ -38,13 +38,15 @@ def network_imports():
                                         ("Recovered_STRING_publication", "ppi", "ppi_publication_positions.csv"),
                                         ("Cached_miRNA_publication", "mirna", "mirna_publication_positions.csv")):
         nodes = read(net / (prefix + "_nodes.csv")); edges = read(net / (prefix + "_edges.csv"))
+        node_ids = {row["Gene"]: str(i + 1) for i, row in enumerate(nodes)}
         pos = {r["Gene"]: r for r in read(net / position_file)}
         ns = "http://www.cs.rpi.edu/XGMML"; cy = "http://www.cytoscape.org"
         ET.register_namespace("", ns); ET.register_namespace("cy", cy)
         tag = lambda name: "{" + ns + "}" + name
-        g = ET.Element(tag("graph"), {"label": stem, "directed": "0"})
+        g = ET.Element(tag("graph"), {"id": "0", "label": stem, "directed": "0"})
         for r in nodes:
-            n = ET.SubElement(g, tag("node"), {"id": r["Gene"], "label": r["Gene"]})
+            n = ET.SubElement(g, tag("node"), {"id": node_ids[r["Gene"]], "label": r["Gene"]})
+            ET.SubElement(n, tag("att"), {"name": "label", "value": r["Gene"], "type": "string"})
             for key in ("Evidence_class", "Node_type"):
                 ET.SubElement(n, tag("att"), {"name": key, "value": r[key], "type": "string"})
             # Match the publication layout in importable graph coordinates; no biological scale is implied.
@@ -54,7 +56,8 @@ def network_imports():
             for key, val in (("NODE_LABEL", r["Gene"].replace("hsa-", "")), ("NODE_LABEL_FONT_SIZE", "14")):
                 ET.SubElement(graphics, tag("att"), {"name": key, "value": val, "type": "string"})
         for i, r in enumerate(edges):
-            e = ET.SubElement(g, tag("edge"), {"id": f"e{i}", "source": r["source"], "target": r["target"], "label": r["edge_type"]})
+            e = ET.SubElement(g, tag("edge"), {"id": str(len(nodes) + i + 1), "source": node_ids[r["source"]],
+                                             "target": node_ids[r["target"]], "label": r["edge_type"]})
             for key in ("edge_type", "combined_score", "experimental_score", "database_score", "textmining_score"):
                 if key in r:
                     ET.SubElement(e, tag("att"), {"name": key, "value": r[key], "type": "real" if "score" in key else "string"})
@@ -63,6 +66,13 @@ def network_imports():
                              ("EDGE_LINE_TYPE", "LONG_DASH" if prefix == "mirna" else "SOLID")):
                 ET.SubElement(gr, tag("att"), {"name": key, "value": val, "type": "string"})
         ET.ElementTree(g).write(net / (stem + ".xgmml"), encoding="utf-8", xml_declaration=True)
+        imported = ET.parse(net / (stem + ".xgmml")).getroot()
+        imported_nodes = imported.findall(tag("node"))
+        labels = {n.get("id"): n.get("label") for n in imported_nodes}
+        assert all(n.get("id").isdigit() and any(a.get("name") == "label" and a.get("value") == n.get("label")
+                   for a in n.findall(tag("att"))) for n in imported_nodes)
+        imported_edges = [(labels[e.get("source")], labels[e.get("target")]) for e in imported.findall(tag("edge"))]
+        assert imported_edges == [(e["source"], e["target"]) for e in edges]
     (net / "README.md").write_text("""# Recovered network assets
 
 The original Cytoscape validation session is preserved as `original_validation_session.cys`.

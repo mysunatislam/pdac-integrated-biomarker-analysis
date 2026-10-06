@@ -26,7 +26,7 @@
   </clipPath>
 </defs>
 <g clip-path='url(#cpMC4wMHwzODIuNjh8MC4wMHwyMzguMTE=)'>
-<rect x='0.00' y='0.000000000000028' width='382.68' height='238.11' style='stroke-width: 0.87; stroke: none; fill: #FFFFFF;' />
+<rect x='0.000000000000032' y='0.000000000000028' width='382.68' height='238.11' style='stroke-width: 0.87; stroke: none; fill: #FFFFFF;' />
 </g>
 <defs>
   <clipPath id='cpMjguMDZ8Mzc3LjcwfDMuOTl8MjIyLjIx'>
@@ -71,7 +71,7 @@
 <text x='231.07' y='232.33' text-anchor='middle' style='font-size: 8.50px;fill: #202428; font-family: "Arial";' textLength='30.70px' lengthAdjust='spacingAndGlyphs'>PDAC II</text>
 <text x='287.47' y='232.33' text-anchor='middle' style='font-size: 8.50px;fill: #202428; font-family: "Arial";' textLength='33.06px' lengthAdjust='spacingAndGlyphs'>PDAC III</text>
 <text x='343.86' y='232.33' text-anchor='middle' style='font-size: 8.50px;fill: #202428; font-family: "Arial";' textLength='34.02px' lengthAdjust='spacingAndGlyphs'>PDAC IV</text>
-<text transform='translate(10.43,113.10) rotate(-90)' text-anchor='middle' style='font-size: 9.00px; font-family: "Arial";' textLength='47.00px' lengthAdjust='spacingAndGlyphs'>Participants</text>
+<text transform='translate(10.43,113.10) rotate(-90)' text-anchor='middle' style='font-size: 9.00px; font-family: "Arial";' textLength='35.00px' lengthAdjust='spacingAndGlyphs'>Samples</text>
 </g>
 </g>
 </svg>

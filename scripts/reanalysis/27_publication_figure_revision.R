@@ -67,7 +67,7 @@ workflow <- function() {
 }
 save(workflow(), "Figure_01", 180, 128)
 
-# Shared grid network renderer. Edges are undirected, and node sizes are constant.
+# Shared grid network renderer. Node widths fit labels, not biological scores.
 netdir <- "figure_revision/networks"
 node_col <- c("Broad association support" = blue, "Early spatial association" = amber,
               "Other historical candidate" = "#D0D4D8", "Network context" = "#F3F4F5", "Cached miRNA query" = green)
@@ -251,7 +251,7 @@ save(p, "Figure_S05", 180, 140)
 cc <- read("secondary_ev", "cohort_composition.csv"); cc$Group <- factor(cc$Group, levels = cc$Group)
 p <- ggplot(cc, aes(Group, Samples)) + geom_col(fill = blue, width = .65) +
   geom_text(aes(label = Samples), vjust = -.4, size = 3.1, family = font) +
-  scale_y_continuous(expand = expansion(mult = c(0, .12))) + labs(x = NULL, y = "Participants") + pub()
+  scale_y_continuous(expand = expansion(mult = c(0, .12))) + labs(x = NULL, y = "Samples") + pub()
 save(p, "Figure_S06", 135, 84)
 
 fam <- read("external", "tissue_frozen_spatial_family.csv")
